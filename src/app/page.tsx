@@ -6,6 +6,7 @@ import Products from "@/components/Products";
 import Industries from "@/components/Industries";
 import WhyUs from "@/components/WhyUs";
 import Clients from "@/components/Clients";
+import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
@@ -21,6 +22,7 @@ export default function Home() {
       <Industries />
       <WhyUs />
       <Clients />
+      <Testimonials />
       <Gallery />
       <Faq />
       <Contact />

@@ -79,6 +79,7 @@ export type Service = {
   seoTitle: string;
   metaDescription: string;
   imageNote: string; // REPLACE guidance
+  image?: string; // set to a /public path when a real photo is available
 };
 
 export const services: Service[] = [
@@ -593,6 +594,7 @@ export type Project = {
   scope: string;
   result: string;
   imageNote: string;
+  image?: string; // set to a /public path when a real photo is available
 };
 
 export const projects: Project[] = [
@@ -653,6 +655,39 @@ export const clients: string[] = [
   "Del Monte",
   "KTDA Tea Factories",
   "Major Transport Companies",
+];
+
+// REPLACE: swap for real, attributable client testimonials (with permission).
+// These are representative placeholders written to reflect typical feedback.
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+  rating: number;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "They re-cored our dryer radiator ahead of the season and turned it around fast. Drying performance was back to normal and our fuel use dropped.",
+    name: "Factory Manager",
+    role: "Tea Processing Factory",
+    rating: 5,
+  },
+  {
+    quote:
+      "Our standby generator failed and Citizen Cooling rewound the stator instead of forcing a full replacement — saved us weeks of lead time and a lot of money.",
+    name: "Maintenance Manager",
+    role: "Private Hospital",
+    rating: 5,
+  },
+  {
+    quote:
+      "Reliable radiator and oil-cooler repairs for our fleet, and a single source for filters and insulation. Honest quotes and dependable turnaround.",
+    name: "Fleet Engineer",
+    role: "Transport Company",
+    rating: 5,
+  },
 ];
 
 export const stats: { value: number; suffix: string; label: string }[] = [

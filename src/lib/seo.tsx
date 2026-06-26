@@ -88,6 +88,35 @@ export function serviceSchema(s: {
   };
 }
 
+export function reviewSchema(
+  reviews: { quote: string; name: string; role: string; rating: number }[]
+) {
+  const avg =
+    reviews.reduce((sum, r) => sum + r.rating, 0) / (reviews.length || 1);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${company.url}/#organization`,
+    name: company.name,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: avg.toFixed(1),
+      reviewCount: reviews.length,
+      bestRating: 5,
+    },
+    review: reviews.map((r) => ({
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating,
+        bestRating: 5,
+      },
+      author: { "@type": "Person", name: r.name },
+      reviewBody: r.quote,
+    })),
+  };
+}
+
 export function faqSchema(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

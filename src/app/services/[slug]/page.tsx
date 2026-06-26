@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
+import MediaFrame from "@/components/ui/MediaFrame";
 import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import Faq from "@/components/Faq";
@@ -82,13 +83,15 @@ export default async function ServiceDetailPage(
                 ))}
               </div>
 
-              {/* Image placeholder */}
-              <div className="mt-8 flex aspect-[16/9] flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-steel-300 bg-white text-steel-400">
-                <Icon name={service.icon} className="h-12 w-12 text-steel-300" />
-                <span className="px-6 text-center font-mono text-xs uppercase tracking-wider">
-                  {service.imageNote}
-                </span>
-              </div>
+              {/* Image — swap-ready: set `image` on the service in site.ts */}
+              <MediaFrame
+                src={service.image}
+                alt={`${service.title} — Citizen Cooling Solutions`}
+                icon={service.icon}
+                note={service.imageNote}
+                className="mt-8"
+                priority
+              />
 
               {/* Process */}
               <h2 className="mt-12 font-display text-2xl font-bold uppercase tracking-tight text-steel-950">

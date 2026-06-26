@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
+import MediaFrame from "@/components/ui/MediaFrame";
 import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
@@ -35,13 +36,14 @@ export default function ProjectsPage() {
             {projects.map((p, i) => (
               <Reveal key={p.title} delay={(i % 3) * 0.05}>
                 <article className="flex h-full flex-col overflow-hidden rounded-xl border border-steel-200 bg-white">
-                  {/* Image placeholder */}
-                  <div className="relative flex aspect-[16/10] items-center justify-center border-b border-dashed border-steel-300 bg-steel-100 text-steel-400">
-                    <div className="absolute inset-0 bg-blueprint opacity-40" aria-hidden="true" />
-                    <span className="relative px-6 text-center font-mono text-[0.65rem] uppercase tracking-wider">
-                      {p.imageNote}
-                    </span>
-                  </div>
+                  {/* Image — swap-ready: set `image` on the project in site.ts */}
+                  <MediaFrame
+                    src={p.image}
+                    alt={`${p.title} — ${p.industry}`}
+                    note={p.imageNote}
+                    ratio="aspect-[16/10]"
+                    className="rounded-none border-x-0 border-t-0"
+                  />
                   <div className="flex flex-1 flex-col p-6">
                     <span className="font-mono text-xs uppercase tracking-wider text-cool-600">
                       {p.industry}

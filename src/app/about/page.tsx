@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import StatBar from "@/components/StatBar";
+import Testimonials from "@/components/Testimonials";
 import CTABand from "@/components/CTABand";
 import { company, values, whyUs } from "@/lib/site";
 import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
@@ -138,6 +139,8 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
+
+      <Testimonials dark />
 
       <CTABand
         title={`Work with ${company.shortName}`}

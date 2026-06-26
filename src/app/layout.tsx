@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { company } from "@/lib/site";
-import { organizationSchema, JsonLd } from "@/lib/seo";
+import { organizationSchema, websiteSchema, JsonLd } from "@/lib/seo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -58,8 +58,20 @@ export const metadata: Metadata = {
     locale: "en_KE",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${company.name} — Industrial Cooling, Power & Insulation`,
+    description:
+      "Radiator & cooling repair, generator service, motor & stator rewinding, and insulation & refractory supply across Kenya.",
+  },
   alternates: { canonical: company.url },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
+  category: "Industrial Engineering",
+  applicationName: company.shortName,
 };
 
 export const viewport: Viewport = {
@@ -78,6 +90,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-frost text-steel-900">
         <JsonLd data={organizationSchema} />
+        <JsonLd data={websiteSchema} />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-heat-500 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"

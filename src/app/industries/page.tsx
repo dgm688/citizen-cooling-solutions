@@ -6,7 +6,7 @@ import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import { industries } from "@/lib/site";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbSchema, itemListSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Industries We Serve",
@@ -24,6 +24,12 @@ export default function IndustriesPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd
+        data={itemListSchema(
+          industries.map((i) => ({ name: i.name, path: `/industries/${i.slug}` })),
+          "Industries served"
+        )}
+      />
       <PageHeader
         eyebrow="Who we serve"
         title="Industries We Support"

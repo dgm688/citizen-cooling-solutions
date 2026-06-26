@@ -37,18 +37,36 @@ export const organizationSchema = {
   "@type": "LocalBusiness",
   "@id": `${company.url}/#organization`,
   name: company.name,
+  alternateName: company.shortName,
   description: company.blurb,
   url: company.url,
   telephone: phonesIntl,
   email: company.email,
+  image: `${company.url}/opengraph-image`,
+  logo: `${company.url}/opengraph-image`,
+  priceRange: "$$",
+  slogan: company.tagline,
   address: {
     "@type": "PostalAddress",
     streetAddress: company.street,
     addressLocality: company.city,
     addressCountry: company.countryCode,
   },
+  // REPLACE: confirm exact coordinates of the Jogoo Road workshop.
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -1.2921,
+    longitude: 36.8602,
+  },
   areaServed: { "@type": "Country", name: "Kenya" },
   openingHours: company.openingHours,
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "08:00",
+    closes: "17:00",
+  },
+  sameAs: Object.values(company.social),
   makesOffer: services.map((s) => ({
     "@type": "Offer",
     itemOffered: { "@type": "Service", name: s.title },
@@ -58,6 +76,35 @@ export const organizationSchema = {
     ...productCategories.map((c) => c.group),
   ],
 };
+
+// WebSite schema — helps Google show the correct site name in results.
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${company.url}/#website`,
+  url: company.url,
+  name: company.name,
+  inLanguage: "en-KE",
+  publisher: { "@id": `${company.url}/#organization` },
+};
+
+// ItemList for index pages (services, industries, products).
+export function itemListSchema(
+  items: { name: string; path: string }[],
+  name: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: `${company.url}${item.path}`,
+    })),
+  };
+}
 
 export function breadcrumbSchema(items: { name: string; path: string }[]) {
   return {

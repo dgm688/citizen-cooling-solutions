@@ -5,7 +5,7 @@ import ServiceCard from "@/components/cards/ServiceCard";
 import Reveal from "@/components/motion/Reveal";
 import CTABand from "@/components/CTABand";
 import { services } from "@/lib/site";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbSchema, itemListSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Industrial Cooling & Power Services",
@@ -23,6 +23,12 @@ export default function ServicesPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd
+        data={itemListSchema(
+          services.map((s) => ({ name: s.title, path: `/services/${s.slug}` })),
+          "Industrial cooling & power services"
+        )}
+      />
       <PageHeader
         eyebrow="What we do"
         title="Engineering Services Built for Uptime"

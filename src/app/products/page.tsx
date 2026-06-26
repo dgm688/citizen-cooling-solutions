@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import { ButtonLink } from "@/components/ui/Button";
-import { productCategories } from "@/lib/site";
+import { productCategories, featuredProducts } from "@/lib/site";
 import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
@@ -31,8 +32,40 @@ export default function ProductsPage() {
         crumbs={crumbs}
       />
 
+      {/* Featured materials gallery */}
+      <section className="bg-white py-16 sm:py-20">
+        <Container>
+          <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-steel-950">
+            Featured Materials
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-steel-600">
+            A snapshot of materials we stock. Browse the full range by category below.
+          </p>
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {featuredProducts.map((p, i) => (
+              <Reveal key={p.name} delay={(i % 4) * 0.05}>
+                <figure className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-steel-200">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent p-3 pt-9">
+                    <span className="font-display text-xs font-semibold uppercase tracking-wide text-white">
+                      {p.name}
+                    </span>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Category quick-nav */}
-      <div className="sticky top-20 z-20 border-b border-steel-200 bg-white/90 backdrop-blur">
+      <div className="sticky top-20 z-20 border-y border-steel-200 bg-white/90 backdrop-blur">
         <Container className="flex flex-wrap gap-2 py-4">
           {productCategories.map((c) => (
             <a
@@ -53,17 +86,34 @@ export default function ProductsPage() {
           className={`scroll-mt-36 py-16 sm:py-20 ${idx % 2 === 0 ? "bg-frost" : "bg-white"}`}
         >
           <Container>
-            <div className="flex items-start gap-4">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-steel-950 text-cool-400">
-                <Icon name={cat.icon} className="h-6 w-6" />
-              </span>
-              <div>
-                <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-steel-950 sm:text-3xl">
-                  {cat.group}
-                </h2>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-steel-600">
-                  {cat.blurb}
-                </p>
+            <div className="grid items-center gap-8 lg:grid-cols-12">
+              {cat.image && (
+                <div className="lg:col-span-5">
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-steel-200">
+                    <Image
+                      src={cat.image}
+                      alt={`${cat.group} — Citizen Cooling Solutions`}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              )}
+              <div className={cat.image ? "lg:col-span-7" : "lg:col-span-12"}>
+                <div className="flex items-start gap-4">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-steel-950 text-cool-400">
+                    <Icon name={cat.icon} className="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-steel-950 sm:text-3xl">
+                      {cat.group}
+                    </h2>
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-steel-600">
+                      {cat.blurb}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 

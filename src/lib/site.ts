@@ -122,6 +122,7 @@ export const services: Service[] = [
     metaDescription:
       "Industrial radiator repair, re-coring and custom fabrication in Nairobi. Engine, generator and plant radiators rebuilt and pressure-tested. Serving all Kenya.",
     imageNote: "REPLACE: workshop photo of a radiator being re-cored / pressure-tested.",
+    image: "/images/services/radiator-repair-fabrication.jpg",
   },
   {
     slug: "oil-cooler-repair",
@@ -154,6 +155,7 @@ export const services: Service[] = [
     metaDescription:
       "Oil cooler and heat exchanger repair in Nairobi — cleaning, re-tubing, leak repair and pressure testing for engines, hydraulics and transmissions across Kenya.",
     imageNote: "REPLACE: photo of an oil cooler / heat exchanger under test.",
+    image: "/images/services/oil-cooler-repair.jpg",
   },
   {
     slug: "turbocharger-intercoolers",
@@ -186,6 +188,7 @@ export const services: Service[] = [
     metaDescription:
       "Charge-air intercooler repair and re-coring in Nairobi. Restore boost pressure and fuel efficiency on turbocharged trucks, gensets and industrial engines in Kenya.",
     imageNote: "REPLACE: photo of an intercooler / charge-air cooler.",
+    image: "/images/services/turbocharger-intercoolers.jpg",
   },
   {
     slug: "tea-factory-dryer-radiators",
@@ -221,6 +224,7 @@ export const services: Service[] = [
     metaDescription:
       "Specialist tea-factory dryer radiator repair, re-coring and fabrication in Kenya. Restore drying efficiency and cut fuel costs. Experience with KTDA & private factories.",
     imageNote: "REPLACE: photo of a tea-dryer finned radiator / heat exchanger.",
+    image: "/images/services/tea-factory-dryer-radiators.jpg",
   },
   {
     slug: "generator-repair-maintenance",
@@ -254,6 +258,7 @@ export const services: Service[] = [
     metaDescription:
       "Diesel generator repair, preventive maintenance and overhauls in Nairobi — on-site and workshop service for hospitals, factories and fleets across Kenya.",
     imageNote: "REPLACE: photo of a technician servicing a diesel generator.",
+    image: "/images/services/generator-repair-maintenance.jpg", // stock — REPLACE with own photo
   },
   {
     slug: "generator-filters-spares",
@@ -285,6 +290,7 @@ export const services: Service[] = [
     metaDescription:
       "Genuine generator filters and spare parts in Nairobi — fuel, oil and air filters, belts and consumables for diesel gensets across Kenya. Supplied and fitted.",
     imageNote: "REPLACE: photo of generator filters / spare parts.",
+    image: "/images/services/generator-filters-spares.jpg", // stock — REPLACE with own photo
   },
   {
     slug: "motor-rewinding",
@@ -317,6 +323,7 @@ export const services: Service[] = [
     metaDescription:
       "Electric motor rewinding and reconditioning in Nairobi — single and three-phase motors restored to specification and tested. Industrial service across Kenya.",
     imageNote: "REPLACE: photo of a motor being rewound (stator windings).",
+    image: "/images/services/motor-rewinding.jpg", // stock — REPLACE with own photo
   },
   {
     slug: "generator-stator-rewinding",
@@ -349,6 +356,7 @@ export const services: Service[] = [
     metaDescription:
       "Generator and alternator stator rewinding in Nairobi — restore rated output and avoid replacement cost. Tested before return. Industrial service across Kenya.",
     imageNote: "REPLACE: photo of an alternator stator being rewound.",
+    image: "/images/services/generator-stator-rewinding.jpg", // stock — REPLACE with own photo
   },
 ];
 
@@ -371,13 +379,27 @@ export type ProductCategory = {
   icon: string;
   blurb: string;
   items: Product[];
+  image?: string; // category header / thumbnail photo
 };
+
+// Featured product photos (from the materials catalogue) for the products gallery.
+export const featuredProducts: { name: string; image: string }[] = [
+  { name: "Ceramic Fibre Blanket", image: "/images/products/ceramic-fibre-blanket.jpg" },
+  { name: "High-Density Rockwool", image: "/images/products/rockwool.jpg" },
+  { name: "Fibreglass Insulation", image: "/images/products/fibreglass.jpg" },
+  { name: "Armaflex Insulation", image: "/images/products/armaflex.jpg" },
+  { name: "Calcium Silicate Boards", image: "/images/products/calcium-silicate.jpg" },
+  { name: "Refractory Fire Bricks", image: "/images/products/fire-bricks.jpg" },
+  { name: "Polyethylene Roof Insulation", image: "/images/products/pe-roof-insulation.jpg" },
+  { name: "Aluminium & Thermal Tapes", image: "/images/products/aluminium-tape.jpg" },
+];
 
 export const productCategories: ProductCategory[] = [
   {
     slug: "thermal-insulation",
     group: "Thermal Insulation",
     icon: "shield",
+    image: "/images/products/cat-thermal-insulation.jpg",
     blurb:
       "High-performance insulation to control heat, save energy and protect personnel — from boilers and pipework to roofs and ducting.",
     items: [
@@ -403,6 +425,7 @@ export const productCategories: ProductCategory[] = [
     slug: "refractory-high-heat",
     group: "Refractory & High-Heat",
     icon: "flame",
+    image: "/images/products/cat-refractory-high-heat.jpg",
     blurb:
       "Refractory materials engineered to withstand extreme heat in furnaces, kilns, boilers and foundries.",
     items: [
@@ -417,6 +440,7 @@ export const productCategories: ProductCategory[] = [
     slug: "sealing-gaskets",
     group: "Sealing & Gaskets",
     icon: "wrench",
+    image: "/images/products/cat-sealing-gaskets.jpg",
     blurb:
       "Industrial sealing solutions for pumps, valves, flanges and steam systems operating under heat and pressure.",
     items: [
@@ -430,6 +454,7 @@ export const productCategories: ProductCategory[] = [
     slug: "safety-industrial",
     group: "Safety & Industrial",
     icon: "bolt",
+    image: "/images/products/cat-safety-industrial.jpg",
     blurb:
       "Industrial safety and ancillary materials that keep plant rooms compliant and personnel protected.",
     items: [
@@ -605,6 +630,7 @@ export const projects: Project[] = [
       "Re-cored a clogged finned dryer heat-exchanger and pressure-tested it ahead of the picking season.",
     result: "Restored drying temperature and air-flow, reducing fuel use per kilo of tea.",
     imageNote: "REPLACE: before/after photo of dryer radiator re-core.",
+    image: "/images/projects/p1.jpg",
   },
   {
     title: "Transport Fleet Radiator Programme",
@@ -613,6 +639,7 @@ export const projects: Project[] = [
       "Ongoing radiator re-coring and oil-cooler repair for a commercial transport fleet.",
     result: "Cut overheating breakdowns and extended cooling-system life across the fleet.",
     imageNote: "REPLACE: photo of truck radiators in the workshop.",
+    image: "/images/projects/p2.jpg",
   },
   {
     title: "Hospital Standby Generator Overhaul",
@@ -621,6 +648,7 @@ export const projects: Project[] = [
       "Full service and stator rewinding on a standby diesel generator with preventive-maintenance plan.",
     result: "Returned the set to dependable standby duty with a scheduled maintenance contract.",
     imageNote: "REPLACE: photo of generator overhaul.",
+    image: "/images/projects/p3.jpg", // stock — REPLACE with own photo
   },
   {
     title: "Furnace Refractory Re-line Supply",
@@ -629,6 +657,7 @@ export const projects: Project[] = [
       "Supplied fire bricks, castables and ceramic-fibre insulation for a furnace re-line.",
     result: "Delivered a complete refractory package from a single source, on schedule.",
     imageNote: "REPLACE: photo of furnace refractory installation.",
+    image: "/images/projects/p4.jpg",
   },
   {
     title: "Industrial Intercooler Restoration",
@@ -636,6 +665,7 @@ export const projects: Project[] = [
     scope: "Repaired and pressure-tested charge-air intercoolers on standby gensets.",
     result: "Restored boost pressure and lowered exhaust temperatures.",
     imageNote: "REPLACE: photo of intercooler restoration.",
+    image: "/images/projects/p5.jpg",
   },
   {
     title: "Processing Line Motor Rewinds",
@@ -643,6 +673,7 @@ export const projects: Project[] = [
     scope: "Rewound several three-phase motors driving a processing line.",
     result: "Returned motors to specification, avoiding long replacement lead-times.",
     imageNote: "REPLACE: photo of rewound motors.",
+    image: "/images/projects/p6.jpg", // stock — REPLACE with own photo
   },
 ];
 

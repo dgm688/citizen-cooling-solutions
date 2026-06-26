@@ -1,16 +1,17 @@
-import Icon from "./Icon";
+import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import Container from "./ui/Container";
 import { ButtonLink } from "./ui/Button";
+import Reveal from "./motion/Reveal";
 
-// Placeholder tiles until the client supplies real workshop & project photography.
+// Real workshop photography (radiator re-cores, cores, intercoolers).
 const tiles = [
-  { label: "Radiator re-coring", icon: "radiator" },
-  { label: "Generator overhaul", icon: "generator" },
-  { label: "Stator rewinding", icon: "stator" },
-  { label: "Intercooler repair", icon: "turbo" },
-  { label: "Refractory lining", icon: "flame" },
-  { label: "Insulation supply", icon: "shield" },
+  { src: "/images/gallery/g1.jpg", label: "Radiator re-coring" },
+  { src: "/images/gallery/g3.jpg", label: "Rebuilt radiator core" },
+  { src: "/images/gallery/g4.jpg", label: "Intercooler repair" },
+  { src: "/images/gallery/g5.jpg", label: "Industrial heat exchanger" },
+  { src: "/images/gallery/g6.jpg", label: "Core close-up" },
+  { src: "/images/gallery/g2.jpg", label: "Fabricated radiator" },
 ];
 
 export default function Gallery() {
@@ -21,7 +22,7 @@ export default function Gallery() {
           <SectionHeader
             eyebrow="Our work"
             title={<>Workshop & Projects</>}
-            intro="A look at the jobs that pass through our workshop. Replace these tiles with real photos of your projects, team and completed work."
+            intro="Real radiators, cores and coolers rebuilt and tested in our Jogoo Road workshop."
           />
           <ButtonLink href="/gallery" variant="outline" size="md" arrow className="shrink-0">
             View gallery
@@ -29,20 +30,23 @@ export default function Gallery() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
-          {tiles.map((t) => (
-            <div
-              key={t.label}
-              className="group relative flex aspect-[4/3] flex-col items-center justify-center gap-3 overflow-hidden rounded-xl border border-dashed border-steel-300 bg-white text-steel-400"
-            >
-              <div className="absolute inset-0 bg-blueprint opacity-50" aria-hidden="true" />
-              <Icon name={t.icon} className="relative h-10 w-10 text-steel-300 transition-colors group-hover:text-cool-500" />
-              <span className="relative font-display text-sm font-semibold uppercase tracking-wide text-steel-500">
-                {t.label}
-              </span>
-              <span className="relative text-[0.7rem] uppercase tracking-wider text-steel-400">
-                Photo coming soon
-              </span>
-            </div>
+          {tiles.map((t, i) => (
+            <Reveal key={t.src} delay={(i % 3) * 0.05}>
+              <figure className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-steel-200">
+                <Image
+                  src={t.src}
+                  alt={`${t.label} — Citizen Cooling Solutions workshop`}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 30vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent p-4 pt-10">
+                  <span className="font-display text-sm font-semibold uppercase tracking-wide text-white">
+                    {t.label}
+                  </span>
+                </figcaption>
+              </figure>
+            </Reveal>
           ))}
         </div>
       </Container>

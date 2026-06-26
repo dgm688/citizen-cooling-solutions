@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Icon from "./Icon";
 import SectionHeader from "./SectionHeader";
 import Container from "./ui/Container";
@@ -28,20 +29,34 @@ export default function Products() {
             <Reveal key={g.slug} delay={i * 0.05}>
               <Link
                 href="/products"
-                className="group flex h-full flex-col rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur transition-colors hover:border-cool-500/40"
+                className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur transition-colors hover:border-cool-500/40"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-cool-500/15 text-cool-300 transition-colors group-hover:bg-cool-500/25">
-                  <Icon name={g.icon} className="h-6 w-6" />
-                </span>
-                <h3 className="mt-4 font-display text-lg font-semibold uppercase tracking-wide">
-                  {g.group}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-steel-300">
-                  {g.blurb}
-                </p>
-                <span className="mt-4 font-mono text-xs uppercase tracking-wider text-cool-300">
-                  {g.items.length} products →
-                </span>
+                {g.image && (
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <Image
+                      src={g.image}
+                      alt={`${g.group} — Citizen Cooling Solutions`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-steel-950/70 to-transparent" aria-hidden="true" />
+                  </div>
+                )}
+                <div className="flex flex-1 flex-col p-6">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-cool-500/15 text-cool-300 transition-colors group-hover:bg-cool-500/25">
+                    <Icon name={g.icon} className="h-6 w-6" />
+                  </span>
+                  <h3 className="mt-4 font-display text-lg font-semibold uppercase tracking-wide">
+                    {g.group}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-steel-300">
+                    {g.blurb}
+                  </p>
+                  <span className="mt-4 font-mono text-xs uppercase tracking-wider text-cool-300">
+                    {g.items.length} products →
+                  </span>
+                </div>
               </Link>
             </Reveal>
           ))}

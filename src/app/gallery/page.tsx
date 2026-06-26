@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
-import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Workshop & Project Gallery",
   description:
-    "Photos from the Citizen Cooling Solutions workshop — radiator re-coring, generator overhauls, motor and stator rewinding, refractory and insulation work in Nairobi, Kenya.",
+    "Photos from the Citizen Cooling Solutions workshop — radiator re-coring, custom cores, intercooler and oil-cooler repair, plus generator, motor and insulation work in Nairobi, Kenya.",
   path: "/gallery",
 });
 
@@ -18,20 +18,21 @@ const crumbs = [
   { name: "Gallery", path: "/gallery" },
 ];
 
-// REPLACE every tile with a real workshop / project photograph.
-const tiles = [
-  { label: "Radiator re-coring", icon: "radiator" },
-  { label: "Custom radiator fabrication", icon: "radiator" },
-  { label: "Oil cooler repair", icon: "droplet" },
-  { label: "Intercooler repair", icon: "turbo" },
-  { label: "Generator overhaul", icon: "generator" },
-  { label: "On-site generator service", icon: "generator" },
-  { label: "Motor rewinding", icon: "coil" },
-  { label: "Stator rewinding", icon: "stator" },
-  { label: "Tea dryer radiator", icon: "flame" },
-  { label: "Refractory lining", icon: "flame" },
-  { label: "Insulation supply", icon: "shield" },
-  { label: "Workshop & team", icon: "wrench" },
+// Real workshop photography.
+const photos = [
+  { src: "/images/gallery/g1.jpg", label: "Radiator re-coring" },
+  { src: "/images/gallery/g2.jpg", label: "Fabricated radiator" },
+  { src: "/images/gallery/g3.jpg", label: "Rebuilt radiator core" },
+  { src: "/images/gallery/g4.jpg", label: "Intercooler repair" },
+  { src: "/images/gallery/g5.jpg", label: "Industrial heat exchanger" },
+  { src: "/images/gallery/g6.jpg", label: "Core close-up" },
+  { src: "/images/gallery/g7.jpg", label: "Aluminium radiator core" },
+  { src: "/images/gallery/g8.jpg", label: "Radiator with header tank" },
+  { src: "/images/gallery/gen.jpg", label: "Diesel generator service" },
+  { src: "/images/gallery/stator.jpg", label: "Alternator stator rewinding" },
+  { src: "/images/gallery/motor.jpg", label: "Electric motor reconditioning" },
+  { src: "/images/gallery/refractory.jpg", label: "Refractory fire bricks" },
+  { src: "/images/gallery/insulation.jpg", label: "Ceramic-fibre insulation" },
 ];
 
 export default function GalleryPage() {
@@ -41,24 +42,28 @@ export default function GalleryPage() {
       <PageHeader
         eyebrow="Our work"
         title="Workshop & Project Gallery"
-        intro="A look inside our workshop and the jobs we handle. These placeholders are ready to be replaced with real photos of your projects, team and completed work."
+        intro="A look inside our workshop and across our capabilities — radiators, coolers, generators, rewinding and the materials we supply across Kenya."
         crumbs={crumbs}
       />
       <section className="bg-frost py-20 sm:py-24">
         <Container>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {tiles.map((t, i) => (
-              <Reveal key={t.label} delay={(i % 4) * 0.05}>
-                <div className="group relative flex aspect-[4/3] flex-col items-center justify-center gap-3 overflow-hidden rounded-xl border border-dashed border-steel-300 bg-white text-steel-400">
-                  <div className="absolute inset-0 bg-blueprint opacity-50" aria-hidden="true" />
-                  <Icon name={t.icon} className="relative h-10 w-10 text-steel-300 transition-colors group-hover:text-cool-500" />
-                  <span className="relative px-3 text-center font-display text-sm font-semibold uppercase tracking-wide text-steel-500">
-                    {t.label}
-                  </span>
-                  <span className="relative font-mono text-[0.65rem] uppercase tracking-wider text-steel-400">
-                    Photo coming soon
-                  </span>
-                </div>
+            {photos.map((p, i) => (
+              <Reveal key={p.src} delay={(i % 4) * 0.05}>
+                <figure className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-steel-200">
+                  <Image
+                    src={p.src}
+                    alt={`${p.label} — Citizen Cooling Solutions workshop`}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent p-3 pt-9">
+                    <span className="font-display text-xs font-semibold uppercase tracking-wide text-white">
+                      {p.label}
+                    </span>
+                  </figcaption>
+                </figure>
               </Reveal>
             ))}
           </div>

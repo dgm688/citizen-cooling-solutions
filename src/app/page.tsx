@@ -19,7 +19,7 @@ export default function Home() {
         data={webPageSchema({
           title: "Industrial Cooling, Power & Insulation — Nairobi",
           description:
-            "Radiator repair & fabrication, generator service, motor & stator rewinding, and thermal insulation & refractory supply across Kenya.",
+            "Radiator repair & fabrication, generator service and motor & stator rewinding across Kenya, plus thermal insulation & refractory supply throughout East Africa.",
           path: "/",
           primaryImage: "/opengraph-image",
         })}

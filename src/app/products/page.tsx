@@ -49,7 +49,7 @@ export default function ProductsPage() {
         data={collectionPageSchema({
           title: "Insulation & Refractory Products Catalogue",
           description:
-            "Industrial thermal insulation, refractory, sealing and safety materials supplied across Kenya.",
+            "Industrial thermal insulation, refractory, sealing and safety materials supplied across Kenya and throughout East Africa.",
           path: "/products",
           items: productCategories.map((c) => ({
             name: c.group,

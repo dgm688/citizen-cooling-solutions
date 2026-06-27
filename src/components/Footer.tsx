@@ -18,8 +18,8 @@ export default function Footer() {
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-steel-400">
               Industrial cooling, power and thermal protection — radiator &amp; cooling
-              repair, generator service, rewinding, and insulation &amp; refractory supply
-              across Kenya.
+              repair, generator service and rewinding across Kenya, with insulation
+              &amp; refractory materials supplied throughout East Africa.
             </p>
             <a
               href={waHref(

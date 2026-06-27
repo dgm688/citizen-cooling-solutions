@@ -18,15 +18,19 @@ import {
 export const metadata: Metadata = pageMeta({
   title: "Insulation & Refractory Products Catalogue",
   description:
-    "Thermal insulation, refractory, sealing and industrial safety materials — Rockwool, ceramic fibre, fire bricks, castables, Armaflex, gaskets and more. Supplied across Kenya.",
+    "Thermal insulation, refractory, sealing and industrial safety materials — Rockwool, ceramic fibre, fire bricks, castables, Armaflex, gaskets and more. Supplied across Kenya & East Africa.",
   path: "/products",
   keywords: [
     "insulation materials supplier Kenya",
+    "insulation suppliers East Africa",
     "rockwool suppliers Kenya",
     "ceramic fibre Kenya",
+    "ceramic fibre East Africa",
     "fiberglass insulation Kenya",
     "thermal insulation Kenya",
+    "thermal insulation East Africa",
     "refractory materials Nairobi",
+    "refractory materials East Africa",
     "fire bricks Kenya",
     "boiler insulation Kenya",
   ],
@@ -57,7 +61,7 @@ export default function ProductsPage() {
       <PageHeader
         eyebrow="Materials store"
         title="Insulation & Refractory Products"
-        intro="A trusted single source for industrial thermal insulation, refractory, sealing and safety materials — supplied in retail packs and bulk orders, delivered across Kenya."
+        intro="A trusted single source for industrial thermal insulation, refractory, sealing and safety materials — supplied in retail packs and bulk orders, delivered across Kenya and the wider East Africa region."
         crumbs={crumbs}
       />
 

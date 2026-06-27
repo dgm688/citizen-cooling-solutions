@@ -16,7 +16,7 @@ export default function Products() {
           <SectionHeader
             eyebrow="Materials store"
             title={<>Insulation & Refractory Products</>}
-            intro="A trusted single source for industrial thermal insulation, refractory and sealing materials — available in retail packs and bulk orders, delivered across Kenya."
+            intro="A trusted single source for industrial thermal insulation, refractory and sealing materials — available in retail packs and bulk orders, delivered across Kenya and throughout East Africa."
             light
           />
           <ButtonLink href="/products" variant="white" size="md" arrow className="shrink-0">

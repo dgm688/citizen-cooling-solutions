@@ -22,6 +22,19 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    // Canonical host: force the apex domain (drop www) with a 301.
+    return [
+      {
+        source: "/:path*",
+        has: [
+          { type: "host", value: "www.citizencoolingsolutions.co.ke" },
+        ],
+        destination: "https://citizencoolingsolutions.co.ke/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

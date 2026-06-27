@@ -8,12 +8,25 @@ export const company = {
   initials: "CCS",
   tagline: "Industrial Cooling, Power & Thermal Protection",
   blurb:
-    "Citizen Cooling Solutions Limited specialises in industrial cooling systems, radiator repair and fabrication, generator maintenance, motor rewinding, and the supply of thermal insulation and refractory materials for industrial clients across Kenya.",
+    "Citizen Cooling Solutions Limited specialises in industrial cooling systems, radiator repair and fabrication, generator maintenance, motor rewinding, and the supply of thermal insulation and refractory materials — serving industrial clients across Kenya and supplying the wider East Africa region.",
   location: "Jogoo Road, Nairobi, Kenya",
   street: "Jogoo Road",
   city: "Nairobi",
   country: "Kenya",
   countryCode: "KE",
+  // Repair/fabrication is workshop-based in Kenya; materials are supplied across East Africa.
+  region: "East Africa",
+  supplyRegion: "Kenya & East Africa",
+  // East African Community markets supplied (for areaServed schema).
+  eacCountries: [
+    "Kenya",
+    "Uganda",
+    "Tanzania",
+    "Rwanda",
+    "Burundi",
+    "South Sudan",
+    "Democratic Republic of the Congo",
+  ],
   domain: "citizencoolingsolutions.co.ke",
   url: "https://citizencoolingsolutions.co.ke",
   hours: "Mon – Sat · 8:00 AM – 5:00 PM",

@@ -69,7 +69,13 @@ export const organizationSchema = {
     latitude: -1.2921,
     longitude: 36.8602,
   },
-  areaServed: { "@type": "Country", name: "Kenya" },
+  areaServed: [
+    { "@type": "Country", name: "Kenya" },
+    ...company.eacCountries
+      .filter((c) => c !== "Kenya")
+      .map((name) => ({ "@type": "Country", name })),
+    { "@type": "Place", name: "East Africa" },
+  ],
   openingHours: company.openingHours,
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",

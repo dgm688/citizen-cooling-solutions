@@ -56,6 +56,8 @@ export const metadata: Metadata = {
     "ceramic fibre Kenya",
     "fiberglass insulation Kenya",
     "thermal insulation Kenya",
+    "insulation suppliers East Africa",
+    "refractory materials East Africa",
     "cooling solutions Kenya",
   ],
   openGraph: {
@@ -81,6 +83,10 @@ export const metadata: Metadata = {
   },
   category: "Industrial Engineering",
   applicationName: company.shortName,
+  // Set GOOGLE_SITE_VERIFICATION in the deploy environment to verify Search Console.
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };
 
 export const viewport: Viewport = {

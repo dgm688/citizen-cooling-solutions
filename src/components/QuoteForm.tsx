@@ -93,7 +93,11 @@ export default function QuoteForm() {
       </button>
 
       {sent && (
-        <p className="flex items-center gap-2 rounded-md bg-cool-500/10 px-4 py-3 text-sm font-medium text-cool-700">
+        <p
+          role="status"
+          aria-live="polite"
+          className="flex items-center gap-2 rounded-md bg-cool-500/10 px-4 py-3 text-sm font-medium text-cool-700"
+        >
           <Icon name="check" className="h-5 w-5" />
           Opening WhatsApp with your details. If it didn&apos;t open, call us on {company.phones[0]}.
         </p>

@@ -45,6 +45,7 @@ export default function Header() {
               <div key={item.href} className="group relative">
                 <Link
                   href={item.href}
+                  aria-current={isActive(item.href) ? "page" : undefined}
                   className={`flex items-center gap-1 py-2 text-sm font-medium transition-colors hover:text-cool-600 ${
                     isActive(item.href) ? "text-cool-600" : "text-steel-700"
                   }`}

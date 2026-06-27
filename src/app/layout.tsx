@@ -101,9 +101,19 @@ export default function RootLayout({
   return (
     <html
       lang="en-KE"
+      // The inline script below adds the `js` class before hydration; this tells
+      // React not to warn about the resulting <html> className difference.
+      suppressHydrationWarning
       className={`${barlow.variable} ${barlowCondensed.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-frost text-steel-900">
+        {/* Flags JS as active before paint so scroll-reveal hidden states only
+            apply with JS — content stays visible if JS fails or is disabled. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
         <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
         <a

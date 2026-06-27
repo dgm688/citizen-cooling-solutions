@@ -1,35 +1,54 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
   y?: number;
-  as?: "div" | "li" | "section";
 };
 
-// Single, accessible scroll-reveal primitive.
-// Respects prefers-reduced-motion (renders instantly, no transform).
+// Lightweight scroll-reveal: IntersectionObserver toggles `data-shown`, and the
+// fade-up transition + reduced-motion handling live in CSS (see globals.css).
+// No animation library — this keeps the client bundle small. Content remains
+// visible when JS is disabled (the hidden state is gated behind the `.js` class).
 export default function Reveal({
   children,
-  className,
+  className = "",
   delay = 0,
   y = 16,
 }: RevealProps) {
-  const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const [shown, setShown] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setShown(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -80px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
+    <div
+      ref={ref}
+      data-reveal=""
+      data-shown={shown || undefined}
+      style={
+        { "--reveal-delay": `${delay}s`, "--reveal-y": `${y}px` } as CSSProperties
+      }
       className={className}
-      initial={reduce ? false : { opacity: 0, y }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -80px 0px" }}
-      transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1], delay }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

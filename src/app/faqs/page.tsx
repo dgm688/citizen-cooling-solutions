@@ -6,6 +6,11 @@ import { faqs } from "@/lib/site";
 import { pageMeta, breadcrumbSchema, faqSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
+  keywords: [
+    "radiator repair questions Kenya",
+    "generator maintenance Kenya",
+    "insulation supplier Kenya FAQ",
+  ],
   title: "Frequently Asked Questions",
   description:
     "Answers to common questions about radiator repair, generator service, motor rewinding, insulation supply, coverage areas and getting a quote from Citizen Cooling Solutions.",

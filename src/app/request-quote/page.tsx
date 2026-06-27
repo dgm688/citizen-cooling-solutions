@@ -7,6 +7,11 @@ import { company, phoneHref, waHref, steps } from "@/lib/site";
 import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
+  keywords: [
+    "radiator repair quote Nairobi",
+    "generator service quote Kenya",
+    "insulation materials quote Kenya",
+  ],
   title: "Request a Free Quote",
   description:
     "Request a free, itemised quote for radiator repair, generator service, motor rewinding or insulation & refractory supply. Fast response by WhatsApp, phone or email — Kenya-wide.",

@@ -37,17 +37,26 @@ export const metadata: Metadata = {
   description:
     "Radiator repair & fabrication, oil cooler & intercooler repair, generator maintenance, motor & stator rewinding, plus supply of thermal insulation & refractory materials. Jogoo Road, Nairobi — serving industrial clients across Kenya.",
   keywords: [
-    "radiator repair Nairobi",
+    "industrial cooling systems Kenya",
+    "radiator repair Kenya",
+    "industrial radiator repairs Nairobi",
     "radiator fabrication Kenya",
+    "heat exchanger repairs Kenya",
+    "generator radiator repair Nairobi",
     "generator repair Nairobi",
+    "generator cooling systems Kenya",
     "motor rewinding Kenya",
     "stator rewinding",
-    "oil cooler repair",
-    "intercooler repair",
-    "tea factory dryer radiator",
-    "thermal insulation supplier Kenya",
-    "refractory materials Nairobi",
-    "fire bricks Kenya",
+    "oil cooler repairs Kenya",
+    "intercooler repairs Kenya",
+    "tea factory radiator repairs",
+    "industrial insulation Kenya",
+    "refractory installation Kenya",
+    "rockwool suppliers Kenya",
+    "ceramic fibre Kenya",
+    "fiberglass insulation Kenya",
+    "thermal insulation Kenya",
+    "cooling solutions Kenya",
   ],
   openGraph: {
     title: `${company.name} — Industrial Cooling, Power & Insulation`,
@@ -85,7 +94,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="en-KE"
       className={`${barlow.variable} ${barlowCondensed.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-frost text-steel-900">

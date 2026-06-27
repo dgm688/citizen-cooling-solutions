@@ -13,15 +13,13 @@ export default function CountUp({
   duration?: number;
 }) {
   const reduce = useReducedMotion();
-  const [display, setDisplay] = useState(reduce ? value : 0);
+  const [display, setDisplay] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
   useEffect(() => {
-    if (reduce) {
-      setDisplay(value);
-      return;
-    }
+    // Reduced motion: the final value is rendered directly (see JSX), no animation.
+    if (reduce) return;
     const el = ref.current;
     if (!el) return;
 
@@ -47,7 +45,7 @@ export default function CountUp({
 
   return (
     <span ref={ref}>
-      {display}
+      {reduce ? value : display}
       {suffix}
     </span>
   );

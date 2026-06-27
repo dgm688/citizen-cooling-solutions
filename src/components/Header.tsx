@@ -24,11 +24,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change.
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
@@ -118,7 +113,11 @@ export default function Header() {
       {/* Mobile menu */}
       {open && (
         <div className="border-t border-steel-200 bg-white lg:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6" aria-label="Mobile">
+          <nav
+            className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6"
+            aria-label="Mobile"
+            onClick={() => setOpen(false)}
+          >
             <Link
               href="/"
               className="rounded-md px-3 py-3 text-base font-medium text-steel-800 hover:bg-steel-100"

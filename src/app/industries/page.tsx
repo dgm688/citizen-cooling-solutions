@@ -13,6 +13,13 @@ export const metadata: Metadata = pageMeta({
   description:
     "Industrial cooling, generator and insulation solutions for tea factories, food processing, hospitals, power generation, transport and manufacturing across Kenya.",
   path: "/industries",
+  keywords: [
+    "tea factory radiator repairs",
+    "industrial cooling Kenya",
+    "generator cooling systems Kenya",
+    "food processing cooling Kenya",
+    "power generation services Kenya",
+  ],
 });
 
 const crumbs = [

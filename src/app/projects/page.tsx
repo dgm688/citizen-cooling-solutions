@@ -9,6 +9,12 @@ import { projects } from "@/lib/site";
 import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
+  keywords: [
+    "industrial cooling projects Kenya",
+    "tea factory radiator repairs",
+    "generator overhaul Nairobi",
+    "refractory installation Kenya",
+  ],
   title: "Projects & Case Studies",
   description:
     "Representative industrial cooling, generator and refractory projects delivered by Citizen Cooling Solutions for tea factories, transport fleets, hospitals and manufacturers in Kenya.",

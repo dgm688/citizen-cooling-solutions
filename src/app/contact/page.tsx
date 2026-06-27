@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/ui/PageHeader";
 import Contact from "@/components/Contact";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbSchema, contactPageSchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Contact Us",
   description:
     "Contact Citizen Cooling Solutions on Jogoo Road, Nairobi. Call, WhatsApp or email for radiator repair, generator service, rewinding and insulation supply across Kenya.",
   path: "/contact",
+  keywords: [
+    "industrial cooling Nairobi contact",
+    "radiator repair Nairobi",
+    "generator repair Nairobi",
+    "Jogoo Road Nairobi engineering",
+  ],
 });
 
 const crumbs = [
@@ -19,6 +25,7 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd data={contactPageSchema} />
       <PageHeader
         eyebrow="Get in touch"
         title="Talk to Our Team"

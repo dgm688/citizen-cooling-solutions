@@ -6,7 +6,7 @@ import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import ServiceCard from "@/components/cards/ServiceCard";
 import { industries, getIndustry, getService } from "@/lib/site";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbSchema, webPageSchema, JsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return industries.map((i) => ({ slug: i.slug }));
@@ -45,6 +45,13 @@ export default async function IndustryDetailPage(
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd
+        data={webPageSchema({
+          title: `${industry.name} — Cooling, Power & Insulation`,
+          description: industry.intro,
+          path: `/industries/${industry.slug}`,
+        })}
+      />
       <PageHeader
         eyebrow="Industry"
         title={industry.name}

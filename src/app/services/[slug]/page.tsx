@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import MediaFrame from "@/components/ui/MediaFrame";
-import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import Faq from "@/components/Faq";
 import CTABand from "@/components/CTABand";
@@ -15,6 +14,7 @@ import {
   pageMeta,
   breadcrumbSchema,
   serviceSchema,
+  webPageSchema,
   faqSchema,
   JsonLd,
 } from "@/lib/seo";
@@ -33,6 +33,12 @@ export async function generateMetadata(
     title: service.seoTitle,
     description: service.metaDescription,
     path: `/services/${service.slug}`,
+    keywords: [
+      `${service.title} Nairobi`,
+      `${service.title} Kenya`,
+      "industrial cooling Kenya",
+      "heat exchanger repairs Kenya",
+    ],
   });
 }
 
@@ -61,6 +67,14 @@ export default async function ServiceDetailPage(
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <JsonLd data={serviceSchema(service)} />
+      <JsonLd
+        data={webPageSchema({
+          title: service.title,
+          description: service.metaDescription,
+          path: `/services/${service.slug}`,
+          primaryImage: service.image,
+        })}
+      />
       {service.faqs.length > 0 && <JsonLd data={faqSchema(service.faqs)} />}
 
       <PageHeader
@@ -168,6 +182,16 @@ export default async function ServiceDetailPage(
                   >
                     Request a Quote
                   </ButtonLink>
+                  <p className="mt-4 text-sm text-steel-400">
+                    We also supply{" "}
+                    <Link
+                      href="/products"
+                      className="font-semibold text-cool-300 underline-offset-2 hover:underline"
+                    >
+                      insulation &amp; refractory materials
+                    </Link>{" "}
+                    for industrial sites across Kenya.
+                  </p>
                 </div>
               </div>
             </aside>

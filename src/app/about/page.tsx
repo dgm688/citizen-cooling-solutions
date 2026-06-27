@@ -14,6 +14,12 @@ export const metadata: Metadata = pageMeta({
   description:
     "Citizen Cooling Solutions Limited is a Nairobi-based industrial engineering workshop and materials supplier — radiator repair, generator service, rewinding, insulation and refractory supply across Kenya.",
   path: "/about",
+  keywords: [
+    "Citizen Cooling Solutions",
+    "industrial cooling company Kenya",
+    "engineering workshop Nairobi",
+    "cooling solutions Kenya",
+  ],
 });
 
 const crumbs = [

@@ -2,7 +2,6 @@ import SectionHeader from "./SectionHeader";
 import Container from "./ui/Container";
 import Reveal from "./motion/Reveal";
 import { testimonials } from "@/lib/site";
-import { reviewSchema, JsonLd } from "@/lib/seo";
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -25,7 +24,12 @@ function Stars({ rating }: { rating: number }) {
 export default function Testimonials({ dark = false }: { dark?: boolean }) {
   return (
     <section className={dark ? "bg-steel-950 py-20 text-white sm:py-24" : "bg-frost py-20 sm:py-24"}>
-      <JsonLd data={reviewSchema(testimonials)} />
+      {/*
+        NOTE: Review/AggregateRating JSON-LD is intentionally NOT emitted here.
+        These testimonials are representative placeholders; fabricated rating
+        markup violates Google's guidelines. Wire `reviewSchema` only once real,
+        named, verifiable reviews exist (see docs/SEO-STRATEGY.md §4).
+      */}
       <Container>
         <SectionHeader
           eyebrow="In their words"

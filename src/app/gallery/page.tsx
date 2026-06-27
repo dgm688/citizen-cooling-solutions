@@ -4,13 +4,19 @@ import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
 import CTABand from "@/components/CTABand";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbSchema, imageGallerySchema, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Workshop & Project Gallery",
   description:
     "Photos from the Citizen Cooling Solutions workshop — radiator re-coring, custom cores, intercooler and oil-cooler repair, plus generator, motor and insulation work in Nairobi, Kenya.",
   path: "/gallery",
+  keywords: [
+    "industrial radiator repairs Nairobi",
+    "radiator re-coring Kenya",
+    "heat exchanger repairs Kenya",
+    "workshop Nairobi",
+  ],
 });
 
 const crumbs = [
@@ -39,6 +45,7 @@ export default function GalleryPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd data={imageGallerySchema(photos)} />
       <PageHeader
         eyebrow="Our work"
         title="Workshop & Project Gallery"

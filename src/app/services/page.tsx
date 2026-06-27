@@ -12,6 +12,16 @@ export const metadata: Metadata = pageMeta({
   description:
     "Radiator repair & fabrication, oil cooler & intercooler repair, generator maintenance, and motor & stator rewinding in Nairobi. Workshop-grade service across Kenya.",
   path: "/services",
+  keywords: [
+    "industrial cooling systems Kenya",
+    "radiator repair Kenya",
+    "industrial radiator repairs Nairobi",
+    "heat exchanger repairs Kenya",
+    "generator radiator repair Nairobi",
+    "intercooler repairs Kenya",
+    "oil cooler repairs Kenya",
+    "motor rewinding Kenya",
+  ],
 });
 
 const crumbs = [

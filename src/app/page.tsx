@@ -10,10 +10,20 @@ import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
+import { webPageSchema, JsonLd } from "@/lib/seo";
 
 export default function Home() {
   return (
     <>
+      <JsonLd
+        data={webPageSchema({
+          title: "Industrial Cooling, Power & Insulation — Nairobi",
+          description:
+            "Radiator repair & fabrication, generator service, motor & stator rewinding, and thermal insulation & refractory supply across Kenya.",
+          path: "/",
+          primaryImage: "/opengraph-image",
+        })}
+      />
       <Hero />
       <Marquee />
       <StatBar />

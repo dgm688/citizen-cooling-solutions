@@ -7,13 +7,29 @@ import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import { ButtonLink } from "@/components/ui/Button";
 import { productCategories, featuredProducts } from "@/lib/site";
-import { pageMeta, breadcrumbSchema, JsonLd } from "@/lib/seo";
+import {
+  pageMeta,
+  breadcrumbSchema,
+  collectionPageSchema,
+  productCollectionSchema,
+  JsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Insulation & Refractory Products Catalogue",
   description:
     "Thermal insulation, refractory, sealing and industrial safety materials — Rockwool, ceramic fibre, fire bricks, castables, Armaflex, gaskets and more. Supplied across Kenya.",
   path: "/products",
+  keywords: [
+    "insulation materials supplier Kenya",
+    "rockwool suppliers Kenya",
+    "ceramic fibre Kenya",
+    "fiberglass insulation Kenya",
+    "thermal insulation Kenya",
+    "refractory materials Nairobi",
+    "fire bricks Kenya",
+    "boiler insulation Kenya",
+  ],
 });
 
 const crumbs = [
@@ -25,6 +41,19 @@ export default function ProductsPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
+      <JsonLd
+        data={collectionPageSchema({
+          title: "Insulation & Refractory Products Catalogue",
+          description:
+            "Industrial thermal insulation, refractory, sealing and safety materials supplied across Kenya.",
+          path: "/products",
+          items: productCategories.map((c) => ({
+            name: c.group,
+            path: `/products#${c.slug}`,
+          })),
+        })}
+      />
+      <JsonLd data={productCollectionSchema(productCategories)} />
       <PageHeader
         eyebrow="Materials store"
         title="Insulation & Refractory Products"

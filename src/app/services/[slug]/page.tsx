@@ -89,7 +89,7 @@ export default async function ServiceDetailPage(
           <div className="grid gap-12 lg:grid-cols-12">
             {/* Main */}
             <div className="lg:col-span-7">
-              <div className="prose-industrial space-y-5">
+              <div className="space-y-5">
                 {service.overview.map((p, i) => (
                   <p key={i} className="text-base leading-relaxed text-steel-700">
                     {p}

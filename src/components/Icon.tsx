@@ -51,20 +51,8 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   leaf: <path d="M5 19c0-8 6-13 14-13 0 8-5 14-14 13ZM5 19c3-4 6-6 9-7" />,
-  crane: (
-    <>
-      <path d="M5 21V5l13 3M5 5h9M9 8v3" />
-      <path d="M5 21h6" />
-    </>
-  ),
   flame: <path d="M12 3c1 4-3 5-3 9a3 3 0 0 0 6 0c0-1-1-2-1-3 2 1 3 3 3 5a6 6 0 1 1-11-3c2-3 5-4 6-8Z" />,
   beaker: <path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3M7 15h10" />,
-  anchor: (
-    <>
-      <circle cx="12" cy="5" r="2" />
-      <path d="M12 7v13M5 13a7 7 0 0 0 14 0M5 13H3m16 0h2" />
-    </>
-  ),
   wrench: <path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L4 16.8 7.2 20l5.3-5.3a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.5-.5-2.3 2.3-2.4Z" />,
   clock: (
     <>

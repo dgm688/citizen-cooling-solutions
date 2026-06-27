@@ -267,8 +267,9 @@ export function collectionPageSchema({
   };
 }
 
-// Product — honest markup: name, description, image, category, brand only.
-// No Offer/price and no Review/AggregateRating (we never fabricate those).
+// Product — honest markup: name, description, image, category only.
+// No `brand` (these materials are supplied, not manufactured by us), no
+// Offer/price and no Review/AggregateRating (we never fabricate those).
 export function productCollectionSchema(
   categories: {
     group: string;
@@ -282,10 +283,7 @@ export function productCollectionSchema(
       name: p.name,
       description: p.desc,
       category: c.group,
-      ...(c.image
-        ? { image: `${company.url}${c.image}` }
-        : {}),
-      brand: { "@type": "Brand", name: company.shortName },
+      ...(c.image ? { image: `${company.url}${c.image}` } : {}),
     }))
   );
   return {

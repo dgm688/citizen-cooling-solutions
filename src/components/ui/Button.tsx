@@ -68,12 +68,14 @@ export function ButtonLink({
 type NativeButtonProps = CommonProps & {
   type?: "button" | "submit";
   disabled?: boolean;
+  onClick?: () => void;
 };
 
 export function Button({
   children,
   type = "button",
   disabled,
+  onClick,
   variant = "primary",
   size = "lg",
   className = "",
@@ -83,6 +85,7 @@ export function Button({
     <button
       type={type}
       disabled={disabled}
+      onClick={onClick}
       className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
     >
       {children}

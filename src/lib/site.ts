@@ -48,9 +48,6 @@ export const company = {
 export const phoneHref = (p: string) =>
   "tel:+254" + p.replace(/\D/g, "").replace(/^0/, "");
 
-export const phoneIntl = (p: string) =>
-  "+254 " + p.replace(/\D/g, "").replace(/^0/, "");
-
 export const waHref = (text?: string) =>
   `https://wa.me/${company.whatsapp}${
     text ? `?text=${encodeURIComponent(text)}` : ""
@@ -476,9 +473,6 @@ export const productCategories: ProductCategory[] = [
     ],
   },
 ];
-
-export const getProductCategory = (slug: string) =>
-  productCategories.find((c) => c.slug === slug);
 
 // Legacy flat grouping kept for the home Products section + QuoteForm options.
 export const productGroups: { group: string; items: string[] }[] =

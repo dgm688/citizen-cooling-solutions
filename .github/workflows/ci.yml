@@ -28,6 +28,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # Next 16 generates route types (PageProps/LayoutProps) into .next/types.
+      # Generate them before the standalone type-check on a fresh checkout.
+      - name: Generate route types
+        run: npx next typegen
+
       - name: Type check
         run: npx tsc --noEmit
 

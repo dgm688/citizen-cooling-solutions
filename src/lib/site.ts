@@ -381,6 +381,8 @@ export type Product = {
   name: string;
   desc: string;
   useCases: string[];
+  image?: string; // /public path to the product photo
+  specs?: string[]; // short technical specs (temperature, density, dimensions)
 };
 
 export type ProductCategory = {
@@ -395,81 +397,110 @@ export type ProductCategory = {
 // Featured product photos (from the materials catalogue) for the products gallery.
 export const featuredProducts: { name: string; image: string }[] = [
   { name: "Ceramic Fibre Blanket", image: "/images/products/ceramic-fibre-blanket.jpg" },
-  { name: "High-Density Rockwool", image: "/images/products/rockwool.jpg" },
-  { name: "Fibreglass Insulation", image: "/images/products/fibreglass.jpg" },
-  { name: "Armaflex Insulation", image: "/images/products/armaflex.jpg" },
-  { name: "Calcium Silicate Boards", image: "/images/products/calcium-silicate.jpg" },
-  { name: "Refractory Fire Bricks", image: "/images/products/fire-bricks.jpg" },
+  { name: "High-Density Rockwool", image: "/images/products/rockwool-roll.jpg" },
+  { name: "Fibreglass Insulation", image: "/images/products/fibreglass-roll.jpg" },
+  { name: "Armaflex Insulation", image: "/images/products/armaflex-sheet.jpg" },
+  { name: "Calcium Silicate Board", image: "/images/products/calcium-silicate-board.jpg" },
+  { name: "40% Alumina Firebricks", image: "/images/products/firebrick-40.jpg" },
+  { name: "Refractory Castable Maxheat-A", image: "/images/products/castable-maxheat-a.jpg" },
   { name: "Polyethylene Roof Insulation", image: "/images/products/pe-roof-insulation.jpg" },
-  { name: "Aluminium & Thermal Tapes", image: "/images/products/aluminium-tape.jpg" },
 ];
 
 export const productCategories: ProductCategory[] = [
   {
-    slug: "thermal-insulation",
-    group: "Thermal Insulation",
-    icon: "shield",
-    image: "/images/products/cat-thermal-insulation.jpg",
-    blurb:
-      "High-performance insulation to control heat, save energy and protect personnel — from boilers and pipework to roofs and ducting.",
-    items: [
-      { name: "Rockwool", desc: "Mineral-wool insulation for high-temperature thermal and acoustic insulation.", useCases: ["Boiler & pipe lagging", "Furnace insulation", "Acoustic walls"] },
-      { name: "Fiberglass", desc: "Glass-wool insulation for thermal and acoustic applications.", useCases: ["Ducting", "Ovens", "Roofs"] },
-      { name: "Ceramic Fiber", desc: "Lightweight high-temperature ceramic fibre insulation up to ~1260°C.", useCases: ["Furnaces", "Kilns", "Heat treatment"] },
-      { name: "Ceramic Fiber Boards", desc: "Rigid ceramic-fibre boards for furnace and kiln linings.", useCases: ["Furnace linings", "Back-up insulation"] },
-      { name: "Ceramic Fiber Blanket", desc: "Flexible ceramic-fibre blanket for high-heat insulation and wrapping.", useCases: ["Furnace wrapping", "Expansion joints"] },
-      { name: "Ceramic Fiber Cloth", desc: "Woven ceramic-fibre cloth for high-temperature gasketing and covers.", useCases: ["Heat shields", "Removable covers"] },
-      { name: "Ceramic Fiber Rope", desc: "Braided ceramic-fibre rope for sealing high-temperature joints.", useCases: ["Furnace door seals", "Boiler seals"] },
-      { name: "Ceramic Fiber Tape", desc: "Ceramic-fibre tape for wrapping pipes and sealing high-heat gaps.", useCases: ["Pipe wrapping", "Joint sealing"] },
-      { name: "Armaflex", desc: "Flexible closed-cell elastomeric insulation for HVAC and refrigeration lines.", useCases: ["Chilled-water pipes", "Refrigeration lines", "Condensation control"] },
-      { name: "Polyethylene Roof Insulation", desc: "Reflective polyethylene foam insulation for roofs and walls.", useCases: ["Roof insulation", "Heat reflection"] },
-      { name: "Styrofoam", desc: "Rigid expanded/extruded polystyrene insulation boards.", useCases: ["Cold rooms", "Wall & roof insulation"] },
-      { name: "Calcium Silicate Boards", desc: "High-temperature, load-bearing calcium-silicate insulation board.", useCases: ["Boiler insulation", "Fire protection", "High-temp pipe support"] },
-      { name: "Acoustic Insulation", desc: "Sound-absorbing insulation for noise control.", useCases: ["Generator rooms", "Plant rooms", "Studios"] },
-      { name: "Vermiculite", desc: "Lightweight mineral used for loose-fill insulation and refractory mixes.", useCases: ["Loose-fill insulation", "Refractory concrete"] },
-      { name: "Thermal Tapes", desc: "High-temperature tapes for wrapping and sealing hot surfaces.", useCases: ["Pipe wrapping", "Heat sealing"] },
-      { name: "Aluminium Tapes", desc: "Foil tapes for sealing and finishing insulation systems.", useCases: ["Vapour sealing", "Insulation finishing"] },
-    ],
-  },
-  {
-    slug: "refractory-high-heat",
-    group: "Refractory & High-Heat",
+    slug: "ceramic-fibre",
+    group: "Ceramic Fibre Insulation",
     icon: "flame",
-    image: "/images/products/cat-refractory-high-heat.jpg",
+    image: "/images/products/cat-ceramic-fibre.jpg",
     blurb:
-      "Refractory materials engineered to withstand extreme heat in furnaces, kilns, boilers and foundries.",
+      "High-purity alumina-silica ceramic fibre for extreme heat — furnaces, kilns and heat-treatment, rated to 1260°C.",
     items: [
-      { name: "Refractory Castables", desc: "Pourable refractory cement for casting furnace and kiln linings.", useCases: ["Furnace linings", "Burner blocks", "Repairs"] },
-      { name: "Refractory Mortars", desc: "High-temperature mortar for laying and bonding refractory bricks.", useCases: ["Brick laying", "Joint sealing"] },
-      { name: "Fire Bricks", desc: "Dense fire-clay bricks for high-temperature furnace and kiln linings.", useCases: ["Furnaces", "Kilns", "Boilers"] },
-      { name: "Acid Resistant Bricks", desc: "Chemically resistant bricks for corrosive and acidic environments.", useCases: ["Chemical plants", "Effluent works", "Linings"] },
-      { name: "Insulating Bricks", desc: "Lightweight insulating fire bricks for back-up and hot-face insulation.", useCases: ["Furnace insulation", "Heat treatment"] },
+      { name: "Ceramic Fibre Blanket", desc: "Flexible, lightweight alumina-silica blanket for high-temperature insulation and wrapping.", specs: ["1260°C", "128 kg/m³", "7620×610×25mm / 3600×610×50mm"], useCases: ["Furnace wrapping", "Kiln insulation", "Expansion joints"], image: "/images/products/ceramic-fibre-blanket.jpg" },
+      { name: "Ceramic Fibre Board", desc: "Rigid alumina-silica panel offering thermal resistance and structural strength.", specs: ["1260°C", "320 kg/m³", "600×300×50mm"], useCases: ["Furnace linings", "Fire protection", "Back-up insulation"], image: "/images/products/ceramic-fibre-board.jpg" },
+      { name: "Non-Asbestos Ceramic Fibre Tape", desc: "Heat-resistant woven tape for wrapping and sealing pipes, flanges and furnace doors.", specs: ["1260°C", "10m × 3mm × 50mm"], useCases: ["Pipe wrapping", "Flange sealing", "Furnace doors"], image: "/images/products/ceramic-fibre-tape.jpg" },
+      { name: "Ceramic Fibre Rope", desc: "Braided round & square rope for sealing high-temperature joints in kilns and stoves.", specs: ["1260°C", "Thickness 6–50mm"], useCases: ["Furnace door seals", "Boiler seals", "Kiln gaskets"], image: "/images/products/ceramic-fibre-rope.jpg" },
+      { name: "Ceramic Fibre Cloth", desc: "Woven fabric (plain or foil-backed) for heat shielding and insulation wrapping.", specs: ["1260°C", "30m × 1m × 3mm"], useCases: ["Heat shields", "Removable covers", "Expansion joints"], image: "/images/products/ceramic-fibre-cloth.jpg" },
+      { name: "Ceramic Fibre Yarn / Thread", desc: "Twisted high-temperature fibre for stitching, gasketing and packing.", specs: ["1260°C"], useCases: ["Stitching insulation", "Gasketing", "Packing"], image: "/images/products/ceramic-fibre-yarn.jpg" },
     ],
   },
   {
-    slug: "sealing-gaskets",
-    group: "Sealing & Gaskets",
+    slug: "mineral-wool-fibreglass",
+    group: "Mineral Wool & Fibreglass",
+    icon: "shield",
+    image: "/images/products/cat-mineral-wool.jpg",
+    blurb:
+      "Non-combustible stone-wool and glass-wool for thermal and acoustic insulation of tanks, pipes, ducts and buildings.",
+    items: [
+      { name: "Rockwool Rolls / Blankets", desc: "Flexible basalt stone-wool roll (mesh-reinforced) for high-temperature pipe, tank and duct insulation.", specs: ["1000°C", "100 kg/m³", "6m×1m×50mm / 3m×1m×75/100mm"], useCases: ["Pipe & tank lagging", "Duct insulation", "Acoustic walls"], image: "/images/products/rockwool-roll.jpg" },
+      { name: "Rockwool Batts / Slabs", desc: "Rigid stone-wool panels for thermal, acoustic and fire protection in walls, roofs and plant.", specs: ["1000°C", "50 kg/m³", "1.2m×0.6m×50/100mm"], useCases: ["Walls & roofs", "Fire protection", "Industrial equipment"], image: "/images/products/rockwool-batt.jpg" },
+      { name: "Preformed Rockwool Pipe Sections", desc: "Rigid cylindrical stone-wool sections for hot and cold pipe insulation.", specs: ["1000°C", "150 kg/m³", "Bore ½–6in, 25/50mm wall"], useCases: ["Steam pipes", "Chilled pipes", "Process lines"], image: "/images/products/rockwool-pipe.jpg" },
+      { name: "Fibreglass Rolls / Blankets", desc: "Lightweight glass-wool roll for thermal and acoustic insulation of roofs, ducting and HVAC.", specs: ["350–450°C", "24 kg/m³", "20m/10m × 1.2m × 50/100mm"], useCases: ["Roofing", "HVAC ducting", "Walls"], image: "/images/products/fibreglass-roll.jpg" },
+      { name: "Fibreglass Batts / Slabs", desc: "Pre-cut glass-fibre panels for efficient thermal and acoustic insulation.", specs: ["350–450°C", "32 kg/m³", "1.2m×0.6m×50/100mm"], useCases: ["Walls & ceilings", "Partitions", "HVAC"], image: "/images/products/fibreglass-batt.jpg" },
+    ],
+  },
+  {
+    slug: "foam-roof-board",
+    group: "Foam, Roof & Board Insulation",
+    icon: "shield",
+    image: "/images/products/cat-foam-board.jpg",
+    blurb:
+      "Elastomeric foam, roof insulation and rigid boards for condensation control, energy savings and fire-rated insulation.",
+    items: [
+      { name: "Armaflex Insulation Sheet / Roll", desc: "Closed-cell elastomeric foam with built-in vapour barrier for condensation control on HVAC and chilled lines.", specs: ["-40 to 120°C", "80 kg/m³", "8m×1m×25mm / 10m×1m×19mm"], useCases: ["Chilled-water pipes", "Refrigeration", "Condensation control"], image: "/images/products/armaflex-sheet.jpg" },
+      { name: "Armaflex with Foil & Adhesive", desc: "Foil-laminated, self-adhesive elastomeric foam for superior heat reflection and quick installation.", specs: ["-40 to 120°C", "Foil + adhesive backing"], useCases: ["Duct wrap", "Radiant heat reflection", "Pipe insulation"], image: "/images/products/armaflex-foil.jpg" },
+      { name: "Styrofoam (EPS) Sheets", desc: "Lightweight expanded-polystyrene board and flexible foam for cold rooms, roofs and packaging.", specs: ["1.2m × 1.2m / 4ft × 4ft", "½–4in thickness"], useCases: ["Cold rooms", "Roofs & walls", "Expansion joint filler"], image: "/images/products/styrofoam.jpg" },
+      { name: "Polyethylene Roof Insulation", desc: "Double-laminated reflective PE foam — a radiant barrier and moisture barrier for roofs and metal structures.", specs: ["Double laminated", "40m×1.5m×2/3mm / 50m×1.2m×10mm"], useCases: ["Metal roofs", "Warehouses", "Cold storage"], image: "/images/products/pe-roof-insulation.jpg" },
+      { name: "Calcium Silicate Boards", desc: "Rigid, load-bearing silica-lime board with high fire resistance and dimensional stability.", specs: ["1000°C", "230 kg/m³", "600×300×50mm"], useCases: ["Furnace linings", "Boiler insulation", "Pipe & wall panels"], image: "/images/products/calcium-silicate-board.jpg" },
+      { name: "Asbestos-Free Millboards", desc: "Compressed mineral-fibre panels for high-temperature insulation in furnaces, fire doors and boilers.", specs: ["Up to 1100°C", "1m×1m × 3–12mm"], useCases: ["Furnace linings", "Fire doors", "Heat containment"], image: "/images/products/asbestos-millboard.jpg" },
+    ],
+  },
+  {
+    slug: "tapes-foil-sealants",
+    group: "Tapes, Foil & Sealants",
     icon: "wrench",
-    image: "/images/products/cat-sealing-gaskets.jpg",
+    image: "/images/products/cat-tapes-sealants.jpg",
     blurb:
-      "Industrial sealing solutions for pumps, valves, flanges and steam systems operating under heat and pressure.",
+      "Thermal and waterproof tapes, reflective foil and fire-rated sealants for finishing and sealing insulation systems.",
     items: [
-      { name: "PTFE Packing", desc: "Chemically inert PTFE gland packing for pumps and valves.", useCases: ["Pump glands", "Valve stems", "Chemical service"] },
-      { name: "Kevlar Packing", desc: "Tough aramid (Kevlar) packing for abrasive and high-pressure duties.", useCases: ["Slurry pumps", "Abrasive media"] },
-      { name: "Metallic Steam Gaskets", desc: "Spiral-wound and metallic gaskets for high-pressure steam flanges.", useCases: ["Steam flanges", "Boilers", "High-pressure joints"] },
-      { name: "Industrial Sealants", desc: "High-temperature and industrial sealants for joints and assemblies.", useCases: ["Flange sealing", "Gasketing", "Assembly"] },
+      { name: "Aluminium Insulation Thermal Tape", desc: "High-temperature foil tape for thermal insulation, heat shielding and sealing hot surfaces.", specs: ['2" × 18m and 3" × 18m'], useCases: ["Pipe wrapping", "Heat sealing", "Duct finishing"], image: "/images/products/aluminium-thermal-tape.jpg" },
+      { name: "Butyl Waterproof Sealing Tape", desc: "Self-adhesive butyl-rubber tape for waterproofing, air sealing and moisture protection on most surfaces.", specs: ["5m × 5cm and 10m × 10cm"], useCases: ["Roof sealing", "Joint waterproofing", "Air sealing"], image: "/images/products/butyl-waterproof-tape.jpg" },
+      { name: "Aluminium Foil FSK", desc: "Reflective foil facing reinforced with fibreglass scrim and kraft paper — an effective vapour barrier.", specs: ["100m × 1.2m wide"], useCases: ["HVAC duct facing", "Roof & wall vapour barrier", "Radiant barrier"], image: "/images/products/aluminium-foil-fsk.jpg" },
+      { name: "Somafix Fire Sealant", desc: "Fire-rated silicone sealant for sealing joints, gaps and penetrations under high heat.", specs: ["Heat resistance 1500°C"], useCases: ["Fire-stopping", "Expansion joints", "Glazing & doors"], image: "/images/products/somafix-sealant.jpg" },
+      { name: "Somafix PU Foam", desc: "Fire-retardant expanding polyurethane foam for filling, sealing and insulating voids and cavities.", specs: ["Fire-retardant (B2)"], useCases: ["Gap filling", "Sealing cavities", "Thermal & acoustic insulation"], image: "/images/products/somafix-foam.jpg" },
     ],
   },
   {
-    slug: "safety-industrial",
-    group: "Safety & Industrial",
-    icon: "bolt",
-    image: "/images/products/cat-safety-industrial.jpg",
+    slug: "refractory",
+    group: "Refractory Bricks & Cements",
+    icon: "flame",
+    image: "/images/products/cat-refractory.jpg",
     blurb:
-      "Industrial safety and ancillary materials that keep plant rooms compliant and personnel protected.",
+      "Firebricks and refractory cements for lining furnaces, kilns, boilers and incinerators above 1000°C.",
     items: [
-      { name: "Electrical Rubber Mats", desc: "Insulating rubber matting for switchrooms and electrical panels.", useCases: ["Switchrooms", "Panel rooms", "Substations"] },
-      { name: "Industrial Insulation Materials", desc: "A broad range of related industrial insulation and protection materials.", useCases: ["General industrial insulation", "Custom requirements"] },
+      { name: "40% Alumina Firebricks", desc: "Balanced-grade fireclay bricks for furnace linings and general high-temperature applications.", specs: ["1600°C", "Standard / Side & End Arch / Slab / Split", "230×115×75mm"], useCases: ["Furnace linings", "Kilns", "Boilers"], image: "/images/products/firebrick-40.jpg" },
+      { name: "70% Alumina Firebricks", desc: "High-alumina bricks with strong slag and chemical resistance and high load-bearing strength.", specs: ["1750–1800°C", "230×115×75mm", "5.2 kg"], useCases: ["Steel furnaces", "Incinerators", "Severe-duty kilns"], image: "/images/products/firebrick-70.jpg" },
+      { name: "Zirconia Firebricks", desc: "Zirconium-oxide bricks for the highest thermal and chemical resistance in glass and steel furnaces.", specs: ["2000°C", "230×115×38mm", "2.2 kg"], useCases: ["Glass furnaces", "Steel ladles", "High-temp kilns"], image: "/images/products/firebrick-zirconia.jpg" },
+      { name: "Insulating Firebricks", desc: "Lightweight, low-density bricks with low thermal conductivity to cut heat loss.", specs: ["230×115×75mm", "2 kg"], useCases: ["Furnaces & kilns", "Pizza ovens", "Chimneys"], image: "/images/products/firebrick-insulating.jpg" },
+      { name: "Refractory Castable — Maxheat-A", desc: "High-performance 90% alumina castable cement for lining furnaces, kilns and incinerators.", specs: ["1750°C", "90% Al₂O₃", "25 kg bag"], useCases: ["Furnace linings", "Monolithic casting", "Repairs"], image: "/images/products/castable-maxheat-a.jpg" },
+      { name: "Refractory Castable — Maxheat-K", desc: "Medium-duty 60% alumina castable with good strength and abrasion resistance.", specs: ["1600°C", "60% Al₂O₃", "25 kg bag"], useCases: ["Kiln & furnace lining", "Fireplaces", "General repairs"], image: "/images/products/castable-maxheat-k.jpg" },
+      { name: "Refractory Mortar — Maxset 50 Fine", desc: "Heat-resistant alumina-fireclay mortar for bonding firebricks and refractory components.", specs: ["1500°C", "25 kg bag"], useCases: ["Brick laying", "Jointing", "Furnace repairs"], image: "/images/products/mortar-maxset-50.jpg" },
+      { name: "Insulating Castable — Maxlyte 11", desc: "Lightweight insulating refractory cement for continuous use up to 1300°C with low heat loss.", specs: ["1300°C", "25 kg bag"], useCases: ["Hot-face insulation", "Kiln lining", "Energy saving"], image: "/images/products/castable-maxlyte-11.jpg" },
+      { name: "Fondu Castable — Max-50", desc: "Fast-setting calcium-aluminate (CAC) cement for rapid kiln repairs and industrial flooring.", specs: ["1000°C", "25 kg bag"], useCases: ["Rapid kiln repairs", "Furnace flooring", "Early-strength linings"], image: "/images/products/castable-fondu-max-50.jpg" },
+    ],
+  },
+  {
+    slug: "acoustic-safety",
+    group: "Acoustic, Safety & Sealing",
+    icon: "bolt",
+    image: "/images/products/cat-acoustic-safety.jpg",
+    blurb:
+      "Acoustic insulation, electrical safety matting, steam gaskets and loose-fill vermiculite for plant rooms and panels.",
+    items: [
+      { name: "Knauf Acoustic Insulation Roll", desc: "High-performance glass-wool roll for superior sound absorption and thermal insulation.", specs: ["16 kg/m³", "13.5m × 1.2m × 50mm"], useCases: ["Walls & ceilings", "Partitions", "Plant rooms"], image: "/images/products/knauf-acoustic-roll.jpg" },
+      { name: "Acoustic Foam Wedges & Panels", desc: "Open-cell foam wedges and fabric panels that absorb sound and reduce echo and reverberation.", specs: ["Wedges 30×30×50mm (12/box)", "Panels 1.2m×0.6m×50mm"], useCases: ["Studios", "Offices", "Quiet rooms"], image: "/images/products/acoustic-foam-wedges.jpg" },
+      { name: "H.V Electrical Rubber Mats", desc: "Duratuf ASTM-D178 insulating matting that protects personnel from electric shock in switchrooms.", specs: ["Class 0–4 (10–50kV)", "1m × 1m, 3.2–12.7mm", "10m rolls"], useCases: ["Substations", "Switchrooms", "Control rooms"], image: "/images/products/rubber-mat.jpg" },
+      { name: "Steel Metallic Steam Gaskets", desc: "Superlite-5000 metallic gasket sheet for high-pressure, high-temperature steam flanges.", specs: ["500–650°C", "1500×1000mm", "1.5–6mm"], useCases: ["Steam flanges", "Boilers", "High-pressure joints"], image: "/images/products/steam-gasket.jpg" },
+      { name: "Vermiculite (Exfoliated)", desc: "Lightweight, non-combustible loose-fill mineral for fireproofing and high-temperature linings.", specs: ["Up to 1100°C", "Medium & Large grade", "10 kg bags"], useCases: ["Loose-fill insulation", "Fireproofing", "Refractory mixes"], image: "/images/products/vermiculite.jpg" },
     ],
   },
 ];

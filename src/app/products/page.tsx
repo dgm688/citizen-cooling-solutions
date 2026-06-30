@@ -153,23 +153,49 @@ export default function ProductsPage() {
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {cat.items.map((p, i) => (
                 <Reveal key={p.name} delay={(i % 3) * 0.05}>
-                  <article className="flex h-full flex-col rounded-xl border border-steel-200 bg-white p-5">
-                    <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-steel-900">
-                      {p.name}
-                    </h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-steel-600">
-                      {p.desc}
-                    </p>
-                    <ul className="mt-4 flex flex-wrap gap-1.5">
-                      {p.useCases.map((u) => (
-                        <li
-                          key={u}
-                          className="rounded-full bg-steel-100 px-2.5 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-steel-600"
-                        >
-                          {u}
-                        </li>
-                      ))}
-                    </ul>
+                  <article className="flex h-full flex-col overflow-hidden rounded-xl border border-steel-200 bg-white">
+                    {p.image && (
+                      <div className="relative aspect-[4/3] overflow-hidden border-b border-steel-100 bg-steel-100">
+                        <Image
+                          src={p.image}
+                          alt={p.name}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col p-5">
+                      <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-steel-900">
+                        {p.name}
+                      </h3>
+                      <p className="mt-2 flex-1 text-sm leading-relaxed text-steel-600">
+                        {p.desc}
+                      </p>
+                      {p.specs && p.specs.length > 0 && (
+                        <dl className="mt-3 space-y-1 border-t border-steel-100 pt-3">
+                          {p.specs.map((s) => (
+                            <dd
+                              key={s}
+                              className="flex items-start gap-2 font-mono text-xs text-steel-700"
+                            >
+                              <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-heat-500" aria-hidden="true" />
+                              {s}
+                            </dd>
+                          ))}
+                        </dl>
+                      )}
+                      <ul className="mt-4 flex flex-wrap gap-1.5">
+                        {p.useCases.map((u) => (
+                          <li
+                            key={u}
+                            className="rounded-full bg-steel-100 px-2.5 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-steel-600"
+                          >
+                            {u}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </article>
                 </Reveal>
               ))}

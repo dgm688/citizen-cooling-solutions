@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { company, services, industries } from "@/lib/site";
+import { company, services, industries, productCategories, allProducts } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -42,5 +42,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...serviceEntries, ...industryEntries];
+  const categoryEntries: MetadataRoute.Sitemap = productCategories.map((c) => ({
+    url: `${base}/products/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const productEntries: MetadataRoute.Sitemap = allProducts.map((p) => ({
+    url: `${base}/products/${p.category.slug}/${p.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticEntries,
+    ...serviceEntries,
+    ...industryEntries,
+    ...categoryEntries,
+    ...productEntries,
+  ];
 }

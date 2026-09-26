@@ -512,6 +512,31 @@ export const productGroups: { group: string; items: string[] }[] =
     items: c.items.map((i) => i.name),
   }));
 
+// URL slug for a product, derived from its name so the data stays the source of truth.
+// "Ceramic Fibre Yarn / Thread" -> "ceramic-fibre-yarn-thread"
+export const productSlug = (name: string) =>
+  name
+    .toLowerCase()
+    .replace(/[°%]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+export type ProductWithCategory = Product & {
+  slug: string;
+  category: ProductCategory;
+};
+
+// Flat catalogue — every product with its slug and parent category.
+export const allProducts: ProductWithCategory[] = productCategories.flatMap((c) =>
+  c.items.map((p) => ({ ...p, slug: productSlug(p.name), category: c }))
+);
+
+export const getProductCategory = (slug: string) =>
+  productCategories.find((c) => c.slug === slug);
+
+export const getProduct = (categorySlug: string, slug: string) =>
+  allProducts.find((p) => p.category.slug === categorySlug && p.slug === slug);
+
 /* ------------------------------------------------------------------ */
 /* Industries                                                          */
 /* ------------------------------------------------------------------ */

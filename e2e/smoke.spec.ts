@@ -18,6 +18,10 @@ const routes = [
   "/services/radiator-repair-fabrication",
   "/services/tea-factory-dryer-radiators",
   "/industries/tea-factories",
+  "/products/ceramic-fibre",
+  "/products/refractory",
+  "/products/ceramic-fibre/ceramic-fibre-blanket",
+  "/products/mineral-wool-fibreglass/rockwool-rolls-blankets",
 ];
 
 test.describe("every route renders", () => {

@@ -299,6 +299,39 @@ export function productCollectionSchema(
   };
 }
 
+// Single product — same honest rules as productCollectionSchema: no price,
+// no availability claim, no reviews. Specs go in additionalProperty, which is
+// factual and machine-readable without asserting anything we can't back up.
+export function productSchema(p: {
+  name: string;
+  desc: string;
+  slug: string;
+  image?: string;
+  specs?: string[];
+  category: { slug: string; group: string };
+}) {
+  const url = `${company.url}/products/${p.category.slug}/${p.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${url}#product`,
+    url,
+    name: p.name,
+    description: p.desc,
+    category: p.category.group,
+    ...(p.image ? { image: `${company.url}${p.image}` } : {}),
+    ...(p.specs && p.specs.length > 0
+      ? {
+          additionalProperty: p.specs.map((s) => ({
+            "@type": "PropertyValue",
+            name: "Specification",
+            value: s,
+          })),
+        }
+      : {}),
+  };
+}
+
 // ImageObject list — for the gallery (helps image search).
 export function imageGallerySchema(images: { src: string; label: string }[]) {
   return {

@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  // The middleware owns trailing slashes. Without this, a WordPress URL like
+  // /about-us/ would take two hops: Next's slash redirect, then ours. Google
+  // has every old URL indexed *with* the slash, so that chain is the norm,
+  // not the exception. See src/middleware.ts.
+  skipTrailingSlashRedirect: true,
   images: {
     formats: ["image/avif", "image/webp"],
   },

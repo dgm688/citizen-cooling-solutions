@@ -42,8 +42,9 @@ export default function RequestQuotePage() {
                   Your details
                 </h2>
                 <p className="mt-2 text-sm text-steel-600">
-                  The form opens WhatsApp pre-filled with your request — or call us
-                  directly using the lines opposite.
+                  Send the form and it reaches our team directly — we reply within
+                  one working day. Prefer WhatsApp or a phone call? Use the buttons
+                  opposite.
                 </p>
                 <div className="mt-8">
                   <QuoteForm />

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
 import Icon from "@/components/Icon";
 import CTABand from "@/components/CTABand";
 import { ButtonLink } from "@/components/ui/Button";
-import { productCategories, featuredProducts } from "@/lib/site";
+import { productCategories, featuredProducts, productSlug } from "@/lib/site";
 import {
   pageMeta,
   breadcrumbSchema,
@@ -101,13 +102,13 @@ export default function ProductsPage() {
       <div className="sticky top-20 z-20 border-y border-steel-200 bg-white/90 backdrop-blur">
         <Container className="flex flex-wrap gap-2 py-4">
           {productCategories.map((c) => (
-            <a
+            <Link
               key={c.slug}
-              href={`#${c.slug}`}
+              href={`/products/${c.slug}`}
               className="rounded-full border border-steel-200 px-4 py-1.5 text-sm font-medium text-steel-700 transition-colors hover:border-cool-400 hover:text-cool-700"
             >
               {c.group}
-            </a>
+            </Link>
           ))}
         </Container>
       </div>
@@ -140,11 +141,23 @@ export default function ProductsPage() {
                   </span>
                   <div>
                     <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-steel-950 sm:text-3xl">
-                      {cat.group}
+                      <Link
+                        href={`/products/${cat.slug}`}
+                        className="transition-colors hover:text-cool-700"
+                      >
+                        {cat.group}
+                      </Link>
                     </h2>
                     <p className="mt-2 max-w-2xl text-sm leading-relaxed text-steel-600">
                       {cat.blurb}
                     </p>
+                    <Link
+                      href={`/products/${cat.slug}`}
+                      className="mt-3 inline-flex items-center gap-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-cool-700 hover:underline"
+                    >
+                      View the {cat.items.length}-item range
+                      <Icon name="arrow" className="h-4 w-4" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -167,7 +180,12 @@ export default function ProductsPage() {
                     )}
                     <div className="flex flex-1 flex-col p-5">
                       <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-steel-900">
-                        {p.name}
+                        <Link
+                          href={`/products/${cat.slug}/${productSlug(p.name)}`}
+                          className="transition-colors hover:text-cool-700"
+                        >
+                          {p.name}
+                        </Link>
                       </h3>
                       <p className="mt-2 flex-1 text-sm leading-relaxed text-steel-600">
                         {p.desc}

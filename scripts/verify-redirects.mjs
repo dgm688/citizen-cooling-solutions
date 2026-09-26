@@ -11,6 +11,10 @@ import { readFileSync } from "node:fs";
 
 const BASE = (process.argv[2] || "http://localhost:3300").replace(/\/$/, "");
 const CONCURRENCY = Number(process.env.CONCURRENCY || 12);
+// Vercel preview deployments sit behind deployment protection. Pass the cookie
+// from a share link so a protected preview can be verified before it goes live:
+//   COOKIE="_vercel_jwt=…" node scripts/verify-redirects.mjs https://…vercel.app
+const HEADERS = process.env.COOKIE ? { cookie: process.env.COOKIE } : {};
 
 const norm = (p) => (p !== "/" ? p.replace(/\/+$/, "") : "/");
 const rows = readFileSync("data/redirect-map.csv", "utf8")
@@ -35,7 +39,7 @@ let checked = 0;
 
 async function checkRedirect(row, sourceOverride) {
   const source = sourceOverride ?? row.source;
-  const res = await fetch(BASE + source, { redirect: "manual" });
+  const res = await fetch(BASE + source, { redirect: "manual", headers: HEADERS });
   if (res.status !== 301) {
     failures.push(`${source} → expected 301, got ${res.status}`);
     return;
@@ -46,14 +50,14 @@ async function checkRedirect(row, sourceOverride) {
     failures.push(`${source} → 301 to ${landed.pathname}, expected ${row.target}`);
     return;
   }
-  const final = await fetch(landed.toString(), { redirect: "manual" });
+  const final = await fetch(landed.toString(), { redirect: "manual", headers: HEADERS });
   if (final.status !== 200) {
     failures.push(`${source} → ${landed.pathname} answered ${final.status} (chain or dead end)`);
   }
 }
 
 async function checkGone(path) {
-  const res = await fetch(BASE + path, { redirect: "manual" });
+  const res = await fetch(BASE + path, { redirect: "manual", headers: HEADERS });
   if (res.status !== 410) failures.push(`${path} → expected 410, got ${res.status}`);
 }
 

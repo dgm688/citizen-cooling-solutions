@@ -1,15 +1,15 @@
 source,type,target,rule
 /,page,/,page map
-/2ft1ft3%e2%80%b3-fire-resistant-blocks-in-kenyatanzaniaugandarwanda/,post,/products,needs decision
-/2ft1ft6%e2%80%b3-fire-resistant-blocks-in-kenyatanzaniaugandarwanda/,post,/products,needs decision
+/2ft1ft3%e2%80%b3-fire-resistant-blocks-in-kenyatanzaniaugandarwanda/,post,/products/refractory,category match
+/2ft1ft6%e2%80%b3-fire-resistant-blocks-in-kenyatanzaniaugandarwanda/,post,/products/refractory,category match
 /40-alumina-refractory-firebricks-in-nairobi-kenya/,post,/products/refractory/40-alumina-firebricks,product page match
-/65-hth-calcium-hypochlorite-in-nairobi-kenya/,post,/products,needs decision
+/65-hth-calcium-hypochlorite-in-nairobi-kenya/,post,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
 /7419-2/,post,/products,needs decision
 /7939-2/,post,/products,needs decision
 /about-us/,page,/about,page map
-/acetic-acid-in-nairobi-kenya/,post,/products,needs decision
-/acid-alkali-proof-bricks-tiles-in-nairobi-kenya/,post,/products,needs decision
-/acid-proof-bricks-tiles-in-nairobi-kenya/,post,/products,needs decision
+/acetic-acid-in-nairobi-kenya/,post,/products/industrial-chemicals/acetic-acid,product page match
+/acid-alkali-proof-bricks-tiles-in-nairobi-kenya/,post,/products/refractory,category match
+/acid-proof-bricks-tiles-in-nairobi-kenya/,post,/products/refractory,category match
 /acid-resistant-bricks-in-nairobi-kenya/,post,/products/refractory,category match
 /acid-resistant-mortar-in-nairobi-kenya/,post,/products/refractory,category match
 /acoustic-diffuser-primed-7-in-nairobi-kenya/,post,/products/acoustic-safety,category match
@@ -21,33 +21,33 @@ source,type,target,rule
 /aluminium-butyl-tape-in-nairobi-kenya-254-724-381-416/,post,/products/tapes-foil-sealants,category match
 /aluminium-butyl-waterproof-sealing-foil-tape-in-nairobi-kenya/,post,/products/tapes-foil-sealants/butyl-waterproof-sealing-tape,product page match
 /aluminium-butyl-waterproof-tape-in-nairobi/,post,/products/tapes-foil-sealants,category match
-/aluminium-plain-sheets-grade-aa1050-in-nairobi-kenya/,post,/products,needs decision
-/aluminium-sulphate-in-nairobi-kenya/,post,/products,needs decision
-/aluminum-grade-1050-in-nairobi-kenya-254-724-381-416/,post,/products,needs decision
+/aluminium-plain-sheets-grade-aa1050-in-nairobi-kenya/,post,/products/metal-sheets/aluminium-plain-sheets-grade-aa1050,product page match
+/aluminium-sulphate-in-nairobi-kenya/,post,/products/industrial-chemicals/aluminium-sulphate,product page match
+/aluminum-grade-1050-in-nairobi-kenya-254-724-381-416/,post,/products/metal-sheets,category match
 /applications-and-uses-of-perlite/,post,/products/acoustic-safety,category match
 /applications-of-exfoliated-vermiculite/,post,/products/acoustic-safety/vermiculite-exfoliated,product page match
 /armaflex-adhesive-tape-insulation-foam-in-nairobi-kenya/,post,/products/tapes-foil-sealants,category match
 /armaflex-sheet-insulation-in-kenya/,post,/products/foam-roof-board,category match
 /author/citizen/,author,/about,author archive
-/bass-traps-in-nairobi-kenya/,post,/products,needs decision
-/biocide-carbatreat-s1700/,post,/products,needs decision
-/boiler-insulation-in-nairobi-kenya/,post,/products,needs decision
-/boiler-insulation-materials-in-nairobikenya/,post,/products,needs decision
-/boric-acid-in-nairobi-kenya-254-724-381416/,post,/products,needs decision
-/brass-in-nairobi-kenya-254-724-381-416/,post,/products,needs decision
-/butyl-glycol-in-nairobi-kenya/,post,/products,needs decision
-/calcium-hypochlorite-65-in-kenya/,post,/products,needs decision
-/calcium-hypochlorite-90-in-kenya/,post,/products,needs decision
-/calcium-hypochlorite-in-kenya/,post,/products,needs decision
+/bass-traps-in-nairobi-kenya/,post,/products/acoustic-safety,category match
+/biocide-carbatreat-s1700/,post,/products/industrial-chemicals,category match
+/boiler-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
+/boiler-insulation-materials-in-nairobikenya/,post,/products/mineral-wool-fibreglass,category match
+/boric-acid-in-nairobi-kenya-254-724-381416/,post,/products/industrial-chemicals/boric-acid,product page match
+/brass-in-nairobi-kenya-254-724-381-416/,post,/products/metal-sheets,category match
+/butyl-glycol-in-nairobi-kenya/,post,/products/industrial-chemicals/butyl-glycol,product page match
+/calcium-hypochlorite-65-in-kenya/,post,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
+/calcium-hypochlorite-90-in-kenya/,post,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
+/calcium-hypochlorite-in-kenya/,post,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
 /calcium-silicate-boards-in-nairobi/,post,/products/foam-roof-board/calcium-silicate-boards,product page match
 /cart/,page,/request-quote,page map
-/castor-oil-in-nairobi-kenya/,post,/products,needs decision
+/castor-oil-in-nairobi-kenya/,post,/products/industrial-chemicals,category match
 /category/agricultural-vermiculite/,category,/products/acoustic-safety,category match
-/category/aluminium-stainless-steel-sheets/,category,/products,needs decision
+/category/aluminium-stainless-steel-sheets/,category,/products/metal-sheets/stainless-steel-sheets,product page match
 /category/electrical-insulation-rubber-mat/,category,/products/acoustic-safety,category match
 /category/fiberglass-batts/,category,/products/mineral-wool-fibreglass,category match
 /category/generators/,category,/products,needs decision
-/category/industrial-chemicals/,category,/products,needs decision
+/category/industrial-chemicals/,category,/products/industrial-chemicals,category match
 /category/radiators/,category,/services/radiator-repair-fabrication,service match
 /category/refractory-materials/,category,/products/refractory,category match
 /category/refrigeration-materials/,category,/products,needs decision
@@ -61,17 +61,17 @@ source,type,target,rule
 /category/thermal-insulation/styrofoam-polystyrene-insulation/,category,/products/foam-roof-board,category match
 /category/uncategorized/,category,/products,needs decision
 /category/water-proof-insulation/,category,/products/foam-roof-board,category match
-/caustic-soda-in-nairobi-kenya-254-724-381416/,post,/products,needs decision
-/caustic-soda-in-nairobi-kenyatanzaniarwandauganda/,post,/products,needs decision
+/caustic-soda-in-nairobi-kenya-254-724-381416/,post,/products/industrial-chemicals,category match
+/caustic-soda-in-nairobi-kenyatanzaniarwandauganda/,post,/products/industrial-chemicals,category match
 /ceramic-fiber-insulation-blanket-in-nairobi-kenya/,post,/products/ceramic-fibre,category match
 /ceramic-fiber-insulation-in-kenyatanzaniarwandauganda/,post,/products/ceramic-fibre,category match
 /ceramic-fiber-insulation-in-nairobi-kenya/,page,/products/ceramic-fibre,category match
 /ceramic-fiber-insulation-materials-in-kenya/,post,/products/ceramic-fibre,category match
 /checking-control-panel/,page,/services/generator-repair-maintenance,service match
 /checkout/,page,/request-quote,page map
-/chemical-resistant-bricks-tiles-in-kenya/,post,/products,needs decision
+/chemical-resistant-bricks-tiles-in-kenya/,post,/products/industrial-chemicals,category match
 /chrome-magnesite-bricks-in-nairobi-kenya/,post,/products/refractory,category match
-/citric-acid-in-kenya-254-724-381-416/,post,/products,needs decision
+/citric-acid-in-kenya-254-724-381-416/,post,/products/industrial-chemicals/citric-acid,product page match
 /common-generator-problems-in-kenya/,page,/services/generator-repair-maintenance,service match
 /common-uses-of-vermiculite-in-kenya/,post,/products/acoustic-safety,category match
 /contacts/,page,/contact,page map
@@ -98,20 +98,20 @@ source,type,target,rule
 /fire-resistant-sealant-in-nairobi-kenya/,post,/products/tapes-foil-sealants,category match
 /fire-resistant-silicone-sealant-in-nairobi-kenya/,post,/products/tapes-foil-sealants,category match
 /fireproof-cement-in-nairobi-kenya-refractory-castable-cement/,post,/products/refractory,category match
-/fireproof-cement-in-nairobi-kenya/,post,/products,needs decision
+/fireproof-cement-in-nairobi-kenya/,post,/products/refractory,category match
 /flopam-an-934-pwg-flocculent/,post,/products,needs decision
 /fluid-analysis/,page,/services/generator-repair-maintenance,service match
-/foam-broadband-absorbers-bass-traps-in-nairobi-kenya/,post,/products,needs decision
+/foam-broadband-absorbers-bass-traps-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /fondu-cement-in-nairobi-kenya/,post,/products/refractory,category match
 /gallery/,page,/gallery,page map
-/galvanised-iron-g-i-sheets-in-nairobi-kenya-8ft4ft-all-thickness/,post,/products,needs decision
-/generator-companies-in-nairobi-kenya/,post,/products,needs decision
+/galvanised-iron-g-i-sheets-in-nairobi-kenya-8ft4ft-all-thickness/,post,/products/metal-sheets/galvanised-iron-g-i-sheets,product page match
+/generator-companies-in-nairobi-kenya/,post,/services/generator-repair-maintenance,service match
 /generator-overhaul-refurbishment-in-nairobi-kenya/,page,/services/generator-repair-maintenance,service match
 /generator-repair-service-and-maintenance-in-nairobi-kenya/,page,/services/generator-repair-maintenance,service match
 /generator-servicing-and-maintenance-in-nairobi-kenya/,page,/services/generator-repair-maintenance,service match
 /generator-spare-parts-in-kenya/,page,/services/generator-filters-spares,service match
 /generators/,page,/services/generator-repair-maintenance,page map
-/gyproc-fire-resistant-gypsum-board-12-5mm/,post,/products,needs decision
+/gyproc-fire-resistant-gypsum-board-12-5mm/,post,/products/gypsum-boards/gyproc-fire-resistant-gypsum-board,product page match
 /heat-thermal-insulation-materials-in-nairobi-kenya/,post,/products,needs decision
 /high-density-100kg-m3-rockwool-mineral-wool-insulation-blanket-3mx1mx75mm-with-mesh-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
 /high-density-100kg-m3-rockwool-mineral-wool-insulation-blanket-3mx1mx75mm-with-mesh-in-rwanda-2/,post,/products/mineral-wool-fibreglass,category match
@@ -135,20 +135,20 @@ source,type,target,rule
 /high-voltage-electrical-insulation-rubber-mat-electromat-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /how-to-use-vermicompost-on-your-plants/,post,/products,needs decision
 /how-to-use-vermicompost/,post,/products,needs decision
-/hth-calcium-hypochlorite-in-kenya-tanzania-rwanda-uganda/,post,/products,needs decision
-/hydrated-lime-in-nairobi-254-724-381416/,post,/products,needs decision
-/hydrogen-peroxide-35-in-kenya/,post,/products,needs decision
-/hydrogen-peroxide-50-in-nairobi/,post,/products,needs decision
-/hydrogen-peroxide-in-kenya/,post,/products,needs decision
+/hth-calcium-hypochlorite-in-kenya-tanzania-rwanda-uganda/,post,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
+/hydrated-lime-in-nairobi-254-724-381416/,post,/products/industrial-chemicals/hydrated-lime,product page match
+/hydrogen-peroxide-35-in-kenya/,post,/products/industrial-chemicals,category match
+/hydrogen-peroxide-50-in-nairobi/,post,/products/industrial-chemicals,category match
+/hydrogen-peroxide-in-kenya/,post,/products/industrial-chemicals,category match
 /incinerator-construction-materials-in-nairobikenya/,post,/products,needs decision
 /insulating-bricks-in-nairobi-kenya/,post,/products/refractory,category match
 /insulating-heat-resistant-refractory-fire-bricks-zirconia-bricks-zro2-65-in-nairobi-kenya/,post,/products/refractory,category match
 /insulation-materials-in-nairobi-kenyatanzaniarwandauganda/,post,/products,needs decision
-/jacobi-activated-carbon-in-nairobi-kenya-254-724-381-416/,post,/products,needs decision
+/jacobi-activated-carbon-in-nairobi-kenya-254-724-381-416/,post,/products/industrial-chemicals/jacobi-activated-carbon,product page match
 /klingerit-in-nairobi-kenya/,post,/products,needs decision
 /knauf-earthwool-acoustic-roll-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /knauf-earthwool-insulation-blanket-in-nairobikenya/,post,/products,needs decision
-/knauf-fire-resistant-gypsum-board-12-5mm/,post,/products,needs decision
+/knauf-fire-resistant-gypsum-board-12-5mm/,post,/products/gypsum-boards/knauf-fire-resistant-gypsum-board,product page match
 /knauf-rockwool-acoustic-roll-in-nairobikenya/,post,/products/mineral-wool-fibreglass,category match
 /knauf-rockwool-insulation-blanket-in-nairobikenya/,post,/products/mineral-wool-fibreglass,category match
 /leak-seal-crack-repair-tape-flex-tape-254-724-381-416/,post,/products/tapes-foil-sealants,category match
@@ -156,39 +156,39 @@ source,type,target,rule
 /leakage-waterproof-tape-in-nairobi-kenya-254-724-381-416/,post,/products/tapes-foil-sealants,category match
 /load-bank-testing/,page,/services/generator-repair-maintenance,service match
 /metal-sheets/,page,/products,page map
-/metalized-chiller-pipe-insulation-in-nairobi-kenya/,post,/products,needs decision
-/metalized-cold-water-pipe-insulation-in-nairobi-kenya/,post,/products,needs decision
-/metalized-hot-water-pipe-insulation-in-nairobi-kenya/,post,/products,needs decision
-/metalized-pipe-lagging-insulation-in-nairobi-kenya/,post,/products,needs decision
-/mild-steel-sheets-in-nairobi-kenya-254-724-381-416/,post,/products,needs decision
+/metalized-chiller-pipe-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
+/metalized-cold-water-pipe-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
+/metalized-hot-water-pipe-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
+/metalized-pipe-lagging-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
+/mild-steel-sheets-in-nairobi-kenya-254-724-381-416/,post,/products/metal-sheets/mild-steel-sheets,product page match
 /mineral-wool-rock-wool-thermal-insulation-blanket-with-wire-mesh-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
-/moisture-resistance-gypsum-board-9-5mm-knauf/,post,/products,needs decision
-/moisture-resistant-gypsum-board-gyproc-12-5mm-for-bathrooms/,post,/products,needs decision
-/monitor-isolation-pads-in-nairobi-kenya/,post,/products,needs decision
+/moisture-resistance-gypsum-board-9-5mm-knauf/,post,/products/gypsum-boards,category match
+/moisture-resistant-gypsum-board-gyproc-12-5mm-for-bathrooms/,post,/products/gypsum-boards/gyproc-moisture-resistant-gypsum-board,product page match
+/monitor-isolation-pads-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /my-account/,page,/request-quote,page map
-/nitric-acid-in-nairobi-kenya-254-724-381416/,post,/products,needs decision
+/nitric-acid-in-nairobi-kenya-254-724-381416/,post,/products/industrial-chemicals/nitric-acid,product page match
 /operation-and-maintenance-of-vermicompost/,post,/products,needs decision
 /our-services/,page,/services,page map
-/oven-insulating-materials-in-nairobi-kenya/,post,/products,needs decision
-/oven-insulation-materials-in-nairobikenya/,post,/products,needs decision
+/oven-insulating-materials-in-nairobi-kenya/,post,/products/refractory,category match
+/oven-insulation-materials-in-nairobikenya/,post,/products/refractory,category match
 /partners-element/,page,/about,page map
 /perlite-suppliers-in-kenya/,post,/products/acoustic-safety,category match
-/phosphoric-acid-in-nairobi-kenya-254-724-381416/,post,/products,needs decision
-/pizza-oven-materials-in-kenya/,post,/products,needs decision
+/phosphoric-acid-in-nairobi-kenya-254-724-381416/,post,/products/industrial-chemicals/phosphoric-acid,product page match
+/pizza-oven-materials-in-kenya/,post,/products/refractory,category match
 /polyethylene-p-e-foam-insulation-in-nairobi-kenya/,page,/products/foam-roof-board,category match
 /polyethylene-pe-foam-roof-insulation-in-kenyauganda-tanzania-rwanda-and-south-sudan/,post,/products/foam-roof-board/polyethylene-roof-insulation,product page match
 /problems-associated-with-delayed-radiator-servicing/,page,/services/radiator-repair-fabrication,service match
 /product-category/acoustic-panels-in-nairobi-kenya/,product_cat,/products/acoustic-safety,category match
-/product-category/aluminium-sheets-in-nairobi-kenya/,product_cat,/products,needs decision
+/product-category/aluminium-sheets-in-nairobi-kenya/,product_cat,/products/metal-sheets,category match
 /product-category/electrical-insulation-rubber-mat-electromat-in-nairobi-kenya/,product_cat,/products/acoustic-safety,category match
 /product-category/filters/,product_cat,/services/generator-filters-spares,service match
 /product-category/filters/air-filters/,product_cat,/services/generator-filters-spares,service match
 /product-category/filters/coolant-water-filters/,product_cat,/services/radiator-repair-fabrication,service match
 /product-category/filters/fuel-filter/,product_cat,/services/generator-filters-spares,service match
 /product-category/filters/oil-filters/,product_cat,/services/generator-filters-spares,service match
-/product-category/galvanised-iron-g-i-sheets-in-nairobi-kenya/,product_cat,/products,needs decision
-/product-category/generator-companies-in-nairobi-kenya/,product_cat,/products,needs decision
-/product-category/industrial-chemicals/,product_cat,/products,needs decision
+/product-category/galvanised-iron-g-i-sheets-in-nairobi-kenya/,product_cat,/products/metal-sheets/galvanised-iron-g-i-sheets,product page match
+/product-category/generator-companies-in-nairobi-kenya/,product_cat,/services/generator-repair-maintenance,service match
+/product-category/industrial-chemicals/,product_cat,/products/industrial-chemicals,category match
 /product-category/insulation-materials-in-nairobi-kenya/,product_cat,/products,needs decision
 /product-category/insulation-materials-in-nairobi-kenya/armaflex-insulation-in-nairobi-kenya/,product_cat,/products/foam-roof-board,category match
 /product-category/insulation-materials-in-nairobi-kenya/ceramic-fiber-insulation-in-nairobi-kenya/,product_cat,/products/ceramic-fibre,category match
@@ -211,8 +211,8 @@ source,type,target,rule
 /product-category/refractory-materials-in-nairobi-kenya/insulating-bricks-in-nairobi-kenya/,product_cat,/products/refractory,category match
 /product-category/refractory-materials-in-nairobi-kenya/refractory-mortar-in-nairobi-kenya/,product_cat,/products/refractory,category match
 /product-category/refractory-materials-in-nairobi-kenya/silicone-manganese-in-nairobi-kenya/,product_cat,/products/refractory,category match
-/product-category/refrigeration-freon-gases-in-nairobi-kenya-r134a-r22-r404a-r407c-r410a-r11/,product_cat,/products,needs decision
-/product-category/stainless-steel-sheets-in-nairobi-kenya/,product_cat,/products,needs decision
+/product-category/refrigeration-freon-gases-in-nairobi-kenya-r134a-r22-r404a-r407c-r410a-r11/,product_cat,/products/refrigeration,category match
+/product-category/stainless-steel-sheets-in-nairobi-kenya/,product_cat,/products/metal-sheets/stainless-steel-sheets,product page match
 /product-category/studio-acoustic-wedges-and-acoustic-pyramids-in-nairobi-kenya/,product_cat,/products/acoustic-safety,category match
 /product-category/thermal-insulation-self-adhesive-tapes-in-nairobi-kenya/,product_cat,/products/tapes-foil-sealants,category match
 /product-category/uncategorized/,product_cat,/products,needs decision
@@ -220,7 +220,7 @@ source,type,target,rule
 /product/40-alumina-firebricks-and-70-alumina-fire-bricks-in-nairobi-kenya-kampala-uganda-tanzania-kigali-rwanda-burundi-south-sudan/,product,/products/refractory/40-alumina-firebricks,product page match
 /product/40-alumina-firebricks-and-70-alumina-fire-bricks-in-south-sudan-254-724-381-416/,product,/products/refractory/40-alumina-firebricks,product page match
 /product/40-alumina-high-temperature-refractory-firebricks-in-nairobi-kenya-254-724-381-416/,product,/products/refractory/40-alumina-firebricks,product page match
-/product/65-hth-calcium-hypochlorite-in-nairobi-kenya/,product,/products,needs decision
+/product/65-hth-calcium-hypochlorite-in-nairobi-kenya/,product,/products/industrial-chemicals/65-hth-calcium-hypochlorite,product page match
 /product/70-alumina-high-temperature-refractory-firebricks-in-nairobi-kenya-254-724-381-416/,product,/products/refractory/40-alumina-firebricks,product page match
 /product/7164/,product,/products,needs decision
 /product/7176/,product,/products,needs decision
@@ -236,8 +236,8 @@ source,type,target,rule
 /product/air-cleaner-af-25620/,product,/services/generator-filters-spares,service match
 /product/air-cleaner-af2525/,product,/services/generator-filters-spares,service match
 /product/aluminium-coated-asbsetos-cloth-in-kenya/,product,/products,needs decision
-/product/aluminium-sheets-in-nairobi-kenya-8ft4ftall-thicknesses/,product,/products,needs decision
-/product/aluminium-sulphate-in-nairobi-kenya/,product,/products,needs decision
+/product/aluminium-sheets-in-nairobi-kenya-8ft4ftall-thicknesses/,product,/products/metal-sheets,category match
+/product/aluminium-sulphate-in-nairobi-kenya/,product,/products/industrial-chemicals/aluminium-sulphate,product page match
 /product/armaflex-in-nairobi-kenya/,product,/products/foam-roof-board,category match
 /product/asbestos-cloth-in-nairobi-kenya/,product,/products,needs decision
 /product/asbestos-ropes-asbestos-tape-twisted-round-square-in-nairobi-kenya/,product,/products/tapes-foil-sealants,category match
@@ -247,16 +247,16 @@ source,type,target,rule
 /product/boiler-firebricks-pizza-oven-firebricks-furnace-firebricks-foundry-firebricks-incinerator-fire-bricks-kiln-fire-bricks-and-chimney-firebricks-in-nairobi-kenya254-724-381-416/,product,/products/refractory,category match
 /product/boiler-firebricks-pizza-oven-firebricks-furnace-firebricks-foundry-firebricks-incinerator-fire-bricks-kiln-fire-bricks-and-chimney-firebricks-in-south-sudan/,product,/products/refractory,category match
 /product/boiler-firebricks-pizza-oven-firebricks-furnace-firebricks-foundry-firebricks-incinerator-fire-bricks-kiln-fire-bricks-and-chimney-firebricks-in-tanzania254-724-381-416/,product,/products/refractory,category match
-/product/boric-in-nairobi-kenya-254-724-381416/,product,/products,needs decision
-/product/butyl-glycol-in-nairobi-kenya/,product,/products,needs decision
+/product/boric-in-nairobi-kenya-254-724-381416/,product,/products/industrial-chemicals,category match
+/product/butyl-glycol-in-nairobi-kenya/,product,/products/industrial-chemicals/butyl-glycol,product page match
 /product/calcium-silicate-boards-in-nairobi-kenya/,product,/products/foam-roof-board/calcium-silicate-boards,product page match
-/product/castor-oil-in-nairobi-kenya/,product,/products,needs decision
+/product/castor-oil-in-nairobi-kenya/,product,/products/industrial-chemicals,category match
 /product/cat-fuel-filter-1r0749/,product,/services/generator-filters-spares,service match
 /product/cat-fuel-water-separator-326-1641/,product,/services/generator-filters-spares,service match
 /product/cat-oil-filter-1r0716/,product,/services/generator-filters-spares,service match
 /product/cat-radial-seal-air-filter-189-0202/,product,/services/generator-filters-spares,service match
-/product/caustic-soda-flakes-and-pearls-in-nairobi-kenya/,product,/products,needs decision
-/product/caustic-soda-in-nairobi-kenya-254-724-381-416/,product,/products,needs decision
+/product/caustic-soda-flakes-and-pearls-in-nairobi-kenya/,product,/products/industrial-chemicals/caustic-soda-flakes-pearls,product page match
+/product/caustic-soda-in-nairobi-kenya-254-724-381-416/,product,/products/industrial-chemicals,category match
 /product/ceramic-fiber-fibre-blanket-for-high-temperatures-insulation-in-nairobi-kenya/,product,/products/ceramic-fibre/ceramic-fibre-blanket,product page match
 /product/ceramic-fiber-insulation-blanket-in-burundi-254-722-401-175/,product,/products/ceramic-fibre,category match
 /product/ceramic-fiber-insulation-blanket-in-dar-es-salaamtanzania254-724-381-416/,product,/products/ceramic-fibre,category match
@@ -272,10 +272,10 @@ source,type,target,rule
 /product/ceramic-fiber-insulation-in-nairobi-kenya-254-722-401-175/,product,/products/ceramic-fibre,category match
 /product/ceramic-fiber-tape-in-kenya/,product,/products/ceramic-fibre,category match
 /product/ceramic-fiber-tapes-in-nairobi-kenya/,product,/products/ceramic-fibre,category match
-/product/ceto-stearyl-cetearyl-alcohol-in-nairobi-kenya/,product,/products,needs decision
-/product/cetrimide-in-nairobi-kenya/,product,/products,needs decision
+/product/ceto-stearyl-cetearyl-alcohol-in-nairobi-kenya/,product,/products/industrial-chemicals,category match
+/product/cetrimide-in-nairobi-kenya/,product,/products/industrial-chemicals,category match
 /product/chrome-magnesite-bricks-in-nairobi-kenya/,product,/products/refractory,category match
-/product/citric-acid-in-nairobi-kenya-254-724-381-416/,product,/products,needs decision
+/product/citric-acid-in-nairobi-kenya-254-724-381-416/,product,/products/industrial-chemicals/citric-acid,product page match
 /product/coco-peat-coco-coir-in-nairobi-kenya/,product,/products,needs decision
 /product/electrical-insulation-rubber-mat-in-nairobi-kenya/,product,/products/acoustic-safety,category match
 /product/exfoliated-vermiculite-in-nairobi-kenya/,product,/products/acoustic-safety/vermiculite-exfoliated,product page match
@@ -304,15 +304,15 @@ source,type,target,rule
 /product/fibre-glasswool-blanket-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/fire-bricks-in-kenya-40-alumina-1500c/,product,/products/refractory,category match
 /product/fire-bricks-in-nairobi-kenya/,product,/products/refractory,category match
-/product/fireproof-cement-in-nairobi-kenya/,product,/products,needs decision
+/product/fireproof-cement-in-nairobi-kenya/,product,/products/refractory,category match
 /product/fleet-guard-coolant-water-filter-wf2076/,product,/services/generator-filters-spares,service match
 /product/fleet-guard-cummins-air-filter-ah1100/,product,/services/generator-filters-spares,service match
 /product/fleet-guard-cummins-lube-filter-lf777/,product,/services/generator-filters-spares,service match
 /product/fleet-guard-cummins-oil-filter-lf670/,product,/services/generator-filters-spares,service match
 /product/fleet-guard-fuel-water-separator-fs1006/,product,/services/generator-filters-spares,service match
 /product/fondu-cement-in-nairobi-kenya/,product,/products/refractory,category match
-/product/galvanized-iron-sheets-g-i-in-nairobi-kenya/,product,/products,needs decision
-/product/generator-companies-in-nairobi-kenya/,product,/products,needs decision
+/product/galvanized-iron-sheets-g-i-in-nairobi-kenya/,product,/products/metal-sheets,category match
+/product/generator-companies-in-nairobi-kenya/,product,/services/generator-repair-maintenance,service match
 /product/glass-fiber-fiber-glass-insulation-in-nairobi-kenya-254-724-381-416/,product,/products/mineral-wool-fibreglass,category match
 /product/gypsum-partition-sound-proofing-rockwool-mineral-wool-in-nairobi-kenya-254-724-381-416/,product,/products/mineral-wool-fibreglass,category match
 /product/high-alumina-refractory-castable-cement-in-nairobi-kenya/,product,/products/refractory,category match
@@ -385,7 +385,7 @@ source,type,target,rule
 /product/high-voltage-electrical-insulation-rubber-mats-in-uganda-254-724-381-416/,product,/products/acoustic-safety/h-v-electrical-rubber-mats,product page match
 /product/high-voltage-electrical-insulation-rubber-mats-in-zambia-254-724-381-416/,product,/products/acoustic-safety/h-v-electrical-rubber-mats,product page match
 /product/high-voltage-electrical-insulation-rubber-mats-in-zimbabwe-254-724-381-416/,product,/products/acoustic-safety/h-v-electrical-rubber-mats,product page match
-/product/hydrated-lime-in-nairobi-kenya-254-724-381416/,product,/products,needs decision
+/product/hydrated-lime-in-nairobi-kenya-254-724-381416/,product,/products/industrial-chemicals/hydrated-lime,product page match
 /product/industrial-boiler-rockwool-insulation-in-arusha-254-724-381-421/,product,/products/mineral-wool-fibreglass,category match
 /product/industrial-boiler-rockwool-insulation-in-burundi-254-724-381-421/,product,/products/mineral-wool-fibreglass,category match
 /product/industrial-boiler-rockwool-insulation-in-dar-es-salaam-254-724-381-421/,product,/products/mineral-wool-fibreglass,category match
@@ -397,7 +397,7 @@ source,type,target,rule
 /product/industrial-boiler-rockwool-insulation-in-sudan-254-724-381-421/,product,/products/mineral-wool-fibreglass,category match
 /product/industrial-boiler-rockwool-insulation-in-tanzania-254-724-381-421/,product,/products/mineral-wool-fibreglass,category match
 /product/insulating-bricks-in-nairobi-kenya/,product,/products/refractory,category match
-/product/jacobi-activated-carbon-in-nairobi-kenya-254-724-381-416/,product,/products,needs decision
+/product/jacobi-activated-carbon-in-nairobi-kenya-254-724-381-416/,product,/products/industrial-chemicals/jacobi-activated-carbon,product page match
 /product/klingerit-1000-gasket-in-nairobi-kenya/,product,/products/acoustic-safety,category match
 /product/knauf-acoustic-mineral-wool-insulation-in-nairobi-kenya-254-724-381-416/,product,/products/mineral-wool-fibreglass,category match
 /product/knauf-acoustic-rockwool-insulation-in-nairobi-kenya-254-724-381-416/,product,/products/mineral-wool-fibreglass,category match
@@ -411,29 +411,29 @@ source,type,target,rule
 /product/lubrication-oil-filter-perkins-ch10929/,product,/services/generator-filters-spares,service match
 /product/mineral-wool-insulation-blanket-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/mineral-wool-pipes-insulation-materials-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
-/product/nitric-acid-in-nairobi-kenya-254-724-381-416/,product,/products,needs decision
+/product/nitric-acid-in-nairobi-kenya-254-724-381-416/,product,/products/industrial-chemicals/nitric-acid,product page match
 /product/perkins-air-element-ch11217/,product,/services/generator-filters-spares,service match
 /product/perkins-air-element-sev551f4/,product,/services/generator-filters-spares,service match
-/product/phosphoric-acid-in-nairobi-kenya-254-724-381-416/,product,/products,needs decision
-/product/pipe-insulation-materials-in-nairobi-kenya/,product,/products,needs decision
+/product/phosphoric-acid-in-nairobi-kenya-254-724-381-416/,product,/products/industrial-chemicals/phosphoric-acid,product page match
+/product/pipe-insulation-materials-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/polyethylene-foam-insulation-in-nairobi-kenya/,product,/products/foam-roof-board,category match
-/product/polyethylene-foam-pipe-insulation-in-nairobi-kenya/,product,/products/foam-roof-board,category match
+/product/polyethylene-foam-pipe-insulation-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/preformed-rockwool-pipes-lagging-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/primary-fuel-water-separator-ch10930/,product,/services/generator-filters-spares,service match
-/product/r134a-refrigeration-freon-gases-in-nairobi-kenya/,product,/products,needs decision
-/product/r22-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r32-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r404a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r407c-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r410a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r507-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
-/product/r600a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products,needs decision
+/product/r134a-refrigeration-freon-gases-in-nairobi-kenya/,product,/products/refrigeration,category match
+/product/r22-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r22-refrigerant-gas,product page match
+/product/r32-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r22-refrigerant-gas,product page match
+/product/r404a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r404a-refrigerant-gas,product page match
+/product/r407c-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r407c-refrigerant-gas,product page match
+/product/r410a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r410a-refrigerant-gas,product page match
+/product/r507-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r507-refrigerant-gas,product page match
+/product/r600a-refrigeration-refrigerant-freon-gas-in-nairobi-kenya/,product,/products/refrigeration/r600a-refrigerant-gas,product page match
 /product/radiator-companies-in-nairobi-kenya/,product,/services/radiator-repair-fabrication,service match
 /product/refractory-cement-in-kenya-maxheat-k-1600c/,product,/products/refractory,category match
 /product/refractory-firebrick-splits-tiles-in-kenya-tanzaniauganda-and-rwanda/,product,/products/refractory,category match
 /product/refractory-firebricks-in-nairobi-kenya-254-724-381-416/,product,/products/refractory,category match
 /product/refractory-mortar-in-nairobi-kenya/,product,/products/refractory,category match
-/product/refrigeration-freon-gases-in-nairobi-kenya-r134a-r22-r404a-r407c-r410a-r11/,product,/products,needs decision
+/product/refrigeration-freon-gases-in-nairobi-kenya-r134a-r22-r404a-r407c-r410a-r11/,product,/products/refrigeration,category match
 /product/rockhard-cement-in-nairobi-kenya/,product,/products/refractory,category match
 /product/rockwool-insulation-blanket-in-nairobi-kenya/,product,/products/mineral-wool-fibreglass,category match
 /product/rockwool-insulation-soundproofing-blanket-50mm-in-nairobikenya/,product,/products/mineral-wool-fibreglass,category match
@@ -441,14 +441,14 @@ source,type,target,rule
 /product/roof-insulation-in-nairobi-kenya/,product,/products/foam-roof-board,category match
 /product/secondary-fuel-filter-perkins-ch10931-in-nairobi-kenya/,product,/services/generator-filters-spares,service match
 /product/silicon-manganese-in-nairobi-kenya/,product,/products/refractory,category match
-/product/sodium-hypochlorite-in-nairobi-kenya/,product,/products,needs decision
-/product/sodium-tripolyphosphate-in-nairobi-kenya/,product,/products,needs decision
+/product/sodium-hypochlorite-in-nairobi-kenya/,product,/products/industrial-chemicals/sodium-hypochlorite,product page match
+/product/sodium-tripolyphosphate-in-nairobi-kenya/,product,/products/industrial-chemicals,category match
 /product/sound-proofing-rockwool-mineral-wool-in-nairobi-kenya-254-724-381-416-2/,product,/products/mineral-wool-fibreglass,category match
 /product/sound-proofing-rockwool-mineral-wool-in-nairobi-kenya-254-724-381-416/,product,/products/mineral-wool-fibreglass,category match
 /product/soundproof-doors-in-nairobi-kenya/,product,/products/acoustic-safety,category match
-/product/stainless-steel-sheet-in-nairobi-kenya/,product,/products,needs decision
+/product/stainless-steel-sheet-in-nairobi-kenya/,product,/products/metal-sheets,category match
 /product/styrofoam-in-nairobi-kenya/,product,/products/foam-roof-board,category match
-/product/sulfuric-acid-in-nairobi-kenya-254-724-381-416-phosphoric-acid-in-nairobi-kenya-254-724-381-416-copy/,product,/products,needs decision
+/product/sulfuric-acid-in-nairobi-kenya-254-724-381-416-phosphoric-acid-in-nairobi-kenya-254-724-381-416-copy/,product,/products/industrial-chemicals/phosphoric-acid,product page match
 /product/vermicompost-in-nairobi-kenya/,product,/products,needs decision
 /product/vermiculite-in-nairobi-kenya/,product,/products/acoustic-safety,category match
 /products_category/electrical-insulation/,products_category,/products,needs decision
@@ -456,24 +456,24 @@ source,type,target,rule
 /products_category/refractory-fireproofing/,products_category,/products/refractory,category match
 /products_category/refrigeration-materials/,products_category,/products,needs decision
 /products_category/thermal-insulation/,products_category,/products,needs decision
-/products/aluminium-cladding-sheets-in-kenya/,stm_products,/products,needs decision
+/products/aluminium-cladding-sheets-in-kenya/,stm_products,/products/metal-sheets,category match
 /products/ceramic-fiber-blanket-in-nairobi-kenya/,stm_products,/products/ceramic-fibre,category match
 /products/ceramic-fiber-fibre-blanket-for-high-temperatures-insulation-in-kigalirwanda/,stm_products,/products/ceramic-fibre/ceramic-fibre-blanket,product page match
 /products/electrical-insulation-rubber-mats-in-nairobi-kenya/,stm_products,/products/acoustic-safety/h-v-electrical-rubber-mats,product page match
-/products/gyproc-fire-resistant-gypsum-board-12-5mm/,stm_products,/products,needs decision
+/products/gyproc-fire-resistant-gypsum-board-12-5mm/,stm_products,/products/gypsum-boards/gyproc-fire-resistant-gypsum-board,product page match
 /products/high-alumina-refractory-fire-bricks-in-nairobi-kenya-254-724-381-416/,stm_products,/products/refractory,category match
-/products/knauf-fire-resistant-gypsum-board-12-5mm/,stm_products,/products,needs decision
-/products/metalized-chiller-pipe-insulation-in-nairobi-kenya/,stm_products,/products,needs decision
-/products/metalized-cold-water-pipe-insulation-in-nairobi-kenya/,stm_products,/products,needs decision
-/products/metalized-hot-water-pipe-insulation-in-nairobi-kenya/,stm_products,/products,needs decision
-/products/metalized-pipe-lagging-insulation-in-nairobi-kenya/,stm_products,/products,needs decision
+/products/knauf-fire-resistant-gypsum-board-12-5mm/,stm_products,/products/gypsum-boards/knauf-fire-resistant-gypsum-board,product page match
+/products/metalized-chiller-pipe-insulation-in-nairobi-kenya/,stm_products,/products/mineral-wool-fibreglass,category match
+/products/metalized-cold-water-pipe-insulation-in-nairobi-kenya/,stm_products,/products/mineral-wool-fibreglass,category match
+/products/metalized-hot-water-pipe-insulation-in-nairobi-kenya/,stm_products,/products/mineral-wool-fibreglass,category match
+/products/metalized-pipe-lagging-insulation-in-nairobi-kenya/,stm_products,/products/mineral-wool-fibreglass,category match
 /products/mineral-wool-insulation-blanket-in-kigali-rwanda/,stm_products,/products/mineral-wool-fibreglass,category match
-/products/moisture-resistance-gypsum-board-knauf/,stm_products,/products,needs decision
-/products/moisture-resistant-gypsum-board-gyproc-12-5mm-for-bathrooms/,stm_products,/products,needs decision
+/products/moisture-resistance-gypsum-board-knauf/,stm_products,/products/gypsum-boards,category match
+/products/moisture-resistant-gypsum-board-gyproc-12-5mm-for-bathrooms/,stm_products,/products/gypsum-boards/gyproc-moisture-resistant-gypsum-board,product page match
 /products/polyethylene-foam-insulation-in-kigalirwanda/,stm_products,/products/foam-roof-board,category match
 /products/refractory-firebricks-in-nairobi-kenya-254-724-381-416/,stm_products,/products/refractory,category match
 /products/rockhard-cement-in-nairobi-kenya/,stm_products,/products/refractory,category match
-/products/sodium-hypochlorite-in-nairobi-kenya/,stm_products,/products,needs decision
+/products/sodium-hypochlorite-in-nairobi-kenya/,stm_products,/products/industrial-chemicals/sodium-hypochlorite,product page match
 /properties-of-vermicompost/,post,/products,needs decision
 /radiator-companies-in-nairobi-kenya/,post,/services/radiator-repair-fabrication,service match
 /radiator-coolant-process/,page,/services/radiator-repair-fabrication,service match
@@ -485,8 +485,8 @@ source,type,target,rule
 /refractory-materials-in-nairobi-kenya/,post,/products/refractory,category match
 /refractory-materials/,page,/products/refractory,page map
 /refractory-mortar-in-nairobi-kenya/,post,/products/refractory,category match
-/refrigeration-copper-tubes-pipes-and-copper-fittings-in-nairobi-kenya/,post,/products,needs decision
-/refrigeration-freon-gases-in-nairobi-kenya/,post,/products,needs decision
+/refrigeration-copper-tubes-pipes-and-copper-fittings-in-nairobi-kenya/,post,/products/refrigeration/refrigeration-copper-tubes-fittings,product page match
+/refrigeration-freon-gases-in-nairobi-kenya/,post,/products/refrigeration,category match
 /refrigeration/,page,/products,page map
 /rock-wool-mineral-wool-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
 /rock-woolmineral-wool-in-south-sudan/,post,/products/mineral-wool-fibreglass,category match
@@ -501,11 +501,11 @@ source,type,target,rule
 /rockwool-mineral-wool-in-uganda/,post,/products/mineral-wool-fibreglass,category match
 /rockwool-mineral-wool-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
 /rockwool-mineral-wool-sound-acoustic-insulation-in-nairobi-kenya/,post,/products/mineral-wool-fibreglass,category match
-/santreat-mz-s-1600-viscosity-reducer/,post,/products,needs decision
+/santreat-mz-s-1600-viscosity-reducer/,post,/products/industrial-chemicals,category match
 /shop/,product,/products,page map
 /silicon-manganese-in-nairobi-kenya/,post,/products/refractory,category match
 /slotted-acoustic-resonator-absorbers-in-nairobi-kenya/,post,/products/acoustic-safety,category match
-/sodium-tripolyphosphate-in-nairobi-kenya/,post,/products,needs decision
+/sodium-tripolyphosphate-in-nairobi-kenya/,post,/products/industrial-chemicals,category match
 /somafix-fire-sealant-s160/,post,/products/tapes-foil-sealants/somafix-fire-sealant,product page match
 /sound-insulation-acoustic-materials-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /sound-insulation-acoustic-panels-in-nairobi-kenya/,post,/products/acoustic-safety,category match
@@ -515,14 +515,14 @@ source,type,target,rule
 /sound-insulation-slotted-panels-in-nairobi-kenya/,post,/products/acoustic-safety,category match
 /sound-insulation/,page,/products/acoustic-safety,page map
 /soundproof-doors-in-nairobi-kenya/,post,/products/acoustic-safety,category match
-/stainless-steel-grade-205-201a-1-nickel-in-nairobikenya-254-724-381-416/,post,/products,needs decision
-/stainless-steel-grade-309-309s-in-nairobikenya-254-724-381-416/,post,/products,needs decision
-/stainless-steel-grade-316-in-nairobikenya-254-724-381-416/,post,/products,needs decision
-/stainless-steel-grade-430-in-nairobikenya/,post,/products,needs decision
-/stainless-steel-sheets-grade-304-201-205-in-nairobi-kenya/,post,/products,needs decision
+/stainless-steel-grade-205-201a-1-nickel-in-nairobikenya-254-724-381-416/,post,/products/metal-sheets,category match
+/stainless-steel-grade-309-309s-in-nairobikenya-254-724-381-416/,post,/products/metal-sheets,category match
+/stainless-steel-grade-316-in-nairobikenya-254-724-381-416/,post,/products/metal-sheets,category match
+/stainless-steel-grade-430-in-nairobikenya/,post,/products/metal-sheets,category match
+/stainless-steel-sheets-grade-304-201-205-in-nairobi-kenya/,post,/products/metal-sheets/stainless-steel-sheets,product page match
 /styrofoam-insulation-in-nairobi-kenya-extruded-polystyrene-foam/,page,/products/foam-roof-board,category match
 /styrofoam-sheets-in-nairobi-kenya/,post,/products/foam-roof-board/styrofoam-eps-sheets,product page match
-/sulfuric-acid-in-nairobi-kenya-254-724-381-416/,post,/products,needs decision
+/sulfuric-acid-in-nairobi-kenya-254-724-381-416/,post,/products/industrial-chemicals,category match
 /thermal-insulation-self-adhesive-tapes-in-nairobi-kenya/,post,/products/tapes-foil-sealants,category match
 /thermal-insulation/,page,/products,page map
 /vermicompost-in-kenya/,post,/products,needs decision

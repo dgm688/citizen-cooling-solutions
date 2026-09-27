@@ -46,19 +46,24 @@ const SERVICE_KEYWORDS = {
   "oil-cooler-repair": ["oil cooler"],
   "turbocharger-intercoolers": ["turbo", "intercooler"],
   "tea-factory-dryer-radiators": ["tea factory", "dryer radiator", "industrial dryer"],
-  "generator-repair-maintenance": ["generator repair", "generator servicing", "generator service", "generator maintenance", "overhaul", "load bank", "vibration analysis", "fluid analysis", "control panel", "common generator", "generator problem", "refurbishment"],
+  "generator-repair-maintenance": ["generator companies", "generator repair", "generator servicing", "generator service", "generator maintenance", "overhaul", "load bank", "vibration analysis", "fluid analysis", "control panel", "common generator", "generator problem", "refurbishment"],
   "generator-filters-spares": ["filter", "fleetguard", "fleet guard", "spare part", "air cleaner", "fuel separator", "water separator", "cummins", "perkins"],
   "motor-rewinding": ["motor rewinding", "electric motor", "armature"],
   "generator-stator-rewinding": ["stator", "alternator"],
+  // catch the generator/radiator "companies" landing pages
 };
 
 const CATEGORY_KEYWORDS = {
   "ceramic-fibre": ["ceramic fiber", "ceramic fibre", "kaowool"],
-  "mineral-wool-fibreglass": ["rockwool", "rock wool", "mineral wool", "fiberglass", "fibreglass", "fiber glass", "glasswool", "glass wool", "isover", "pipe section"],
+  "mineral-wool-fibreglass": ["rockwool", "rock wool", "mineral wool", "fiberglass", "fibreglass", "fiber glass", "glasswool", "glass wool", "isover", "pipe section", "pipe insulation", "pipe lagging", "lagging", "metalized", "chiller pipe", "boiler insulation"],
   "foam-roof-board": ["armaflex", "styrofoam", "polystyrene", "polyethylene", "pe foam", "roof insulation", "calcium silicate", "hysil", "millboard", "mill board"],
   "tapes-foil-sealants": ["tape", "foil", "sealant", "adhesive", "somafix", "fsk"],
-  refractory: ["firebrick", "fire brick", "refractory", "castable", "mortar", "fondu", "alumina", "magnesite", "insulating brick", "hearth", "tapper", "acid resistant", "fire cement", "fire clay", "rockhard", "silicon manganese", "zircon"],
-  "acoustic-safety": ["acoustic", "sound", "noise", "echo", "rubber mat", "electromat", "gasket", "vermiculite", "perlite"],
+  refractory: ["firebrick", "fire brick", "refractory", "castable", "mortar", "fondu", "alumina", "magnesite", "insulating brick", "hearth", "tapper", "acid resistant", "acid proof", "acid alkali", "fire resistant block", "fireproof cement", "fire cement", "fire clay", "rockhard", "silicon manganese", "zircon", "pizza oven", "oven insulat", "kiln"],
+  "acoustic-safety": ["acoustic", "sound", "noise", "echo", "rubber mat", "electromat", "gasket", "vermiculite", "perlite", "bass trap", "isolation pad", "studio"],
+  refrigeration: ["freon", "refrigerant", "refrigeration gas", "r134", "r22 ", "r32 ", "r404", "r407", "r410", "r507", "r600", "r11 ", "copper tube", "copper pipe", "copper fitting"],
+  "metal-sheets": ["aluminium sheet", "aluminium plain", "aluminum", "g i sheet", "gi sheet", "galvanised", "galvanized", "stainless steel", "mild steel", "chequered", "aluminium grade", "cladding sheet", "brass"],
+  "gypsum-boards": ["gypsum board", "gyproc", "plasterboard", "ceiling board", "knauf board", "gypsum partition"],
+  "industrial-chemicals": ["sulphuric", "sulfuric", "nitric", "phosphoric", "caustic soda", "boric", "hydrated lime", "activated carbon", "hypochlorite", "aluminium sulphate", "acetic", "citric", "tripolyphosphate", "butyl glycol", "hydrogen peroxide", "sodium", "calcium carbide", "chemical", "castor oil", "cetrimide", "cetearyl", "cetostearyl", "biocide", "viscosity reducer", "carbatreat", "santreat", "glycol"],
 };
 
 const PAGE_MAP = {

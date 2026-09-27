@@ -503,6 +503,73 @@ export const productCategories: ProductCategory[] = [
       { name: "Vermiculite (Exfoliated)", desc: "Lightweight, non-combustible loose-fill mineral for fireproofing and high-temperature linings.", specs: ["Up to 1100°C", "Medium & Large grade", "10 kg bags"], useCases: ["Loose-fill insulation", "Fireproofing", "Refractory mixes"], image: "/images/products/vermiculite.jpg" },
     ],
   },
+  {
+    slug: "refrigeration",
+    group: "Refrigerant Gases & Copper",
+    icon: "droplet",
+    blurb:
+      "Refrigerant gases in sealed cylinders, plus the copper tube and fittings to run them — for cold rooms, chillers, air conditioning and refrigeration plant.",
+    items: [
+      { name: "R134a Refrigerant Gas", desc: "HFC refrigerant for automotive air conditioning, domestic and commercial refrigeration and medium-temperature chillers.", specs: ["13.6 kg net cylinder"], useCases: ["Car air conditioning", "Chillers", "Commercial fridges"] },
+      { name: "R22 Refrigerant Gas", desc: "HCFC refrigerant still widely serviced in older air-conditioning and cold-room plant.", specs: ["13.6 kg net cylinder"], useCases: ["Legacy air conditioning", "Cold rooms", "Servicing existing plant"] },
+      { name: "R32 Refrigerant Gas", desc: "Lower-GWP HFC refrigerant used in newer split and multi-split air-conditioning systems.", specs: ["7 kg net cylinder"], useCases: ["Split air conditioning", "New AC installs", "Heat pumps"] },
+      { name: "R404A Refrigerant Gas", desc: "Blend refrigerant for low and medium-temperature commercial refrigeration.", specs: ["10.9 kg net cylinder"], useCases: ["Cold rooms", "Freezers", "Display cabinets"] },
+      { name: "R407C Refrigerant Gas", desc: "HFC blend commonly used as a service replacement in R22 air-conditioning systems.", specs: ["11.3 kg net cylinder"], useCases: ["R22 retrofits", "Air conditioning", "Chillers"] },
+      { name: "R410A Refrigerant Gas", desc: "High-efficiency HFC blend for modern split and packaged air-conditioning units.", specs: ["11.3 kg net cylinder"], useCases: ["Split AC", "Packaged units", "Heat pumps"] },
+      { name: "R507 Refrigerant Gas", desc: "Azeotropic blend for low-temperature commercial and industrial refrigeration.", specs: ["11.3 kg net cylinder"], useCases: ["Blast freezers", "Low-temp cold rooms", "Industrial refrigeration"] },
+      { name: "R600a Refrigerant Gas", desc: "Isobutane refrigerant used in domestic fridges and small sealed refrigeration systems.", specs: ["6 kg net cylinder"], useCases: ["Domestic fridges", "Small sealed systems", "Service work"] },
+      { name: "Refrigeration Copper Tubes & Fittings", desc: "Refrigeration-grade copper tube with elbows, tees, reducers and unions for pipework runs.", useCases: ["Cold room pipework", "AC installation", "Chiller runs"] },
+    ],
+  },
+  {
+    slug: "metal-sheets",
+    group: "Metal Sheets",
+    icon: "factory",
+    blurb:
+      "Aluminium, galvanised iron, stainless and mild steel sheet in the standard 8ft × 4ft format, cut and supplied for cladding, ducting and fabrication.",
+    items: [
+      { name: "Aluminium Plain Sheets (Grade AA1050)", desc: "Commercially pure aluminium sheet used for insulation cladding, ducting and light fabrication.", specs: ["Grade AA1050", "8ft × 4ft", "All thicknesses"], useCases: ["Insulation cladding", "Ducting", "Fabrication"] },
+      { name: "Galvanised Iron (G.I.) Sheets", desc: "Zinc-coated steel sheet for roofing, ducting, cladding and general sheet-metal work.", specs: ["8ft × 4ft", "0.4mm – 3mm"], useCases: ["Roofing", "Ducting", "Sheet-metal work"] },
+      { name: "Stainless Steel Sheets", desc: "Stainless sheet in the grades most used for food, chemical and hygienic installations.", specs: ["Grades 304, 201 & 205", "8ft × 4ft", "0.4mm – 50mm"], useCases: ["Food processing", "Chemical plant", "Hygienic cladding"] },
+      { name: "Mild Steel Sheets", desc: "General-purpose carbon steel sheet for structures, frames, guards and fabrication.", specs: ["8ft × 4ft", "Various thicknesses"], useCases: ["Fabrication", "Machine guards", "Structural work"] },
+    ],
+  },
+  {
+    slug: "gypsum-boards",
+    group: "Gypsum Boards",
+    icon: "shield",
+    blurb:
+      "Knauf and Gyproc fire-resistant and moisture-resistant plasterboard for partitions and ceilings — paired with the Rockwool infill that goes inside them.",
+    items: [
+      { name: "Knauf Fire Resistant Gypsum Board", desc: "Fire-rated plasterboard with a glass-fibre reinforced core, for partitions and ceilings where a fire rating is required.", specs: ["12.5mm"], useCases: ["Fire-rated partitions", "Ceilings", "Service shafts"] },
+      { name: "Gyproc Fire Resistant Gypsum Board", desc: "Fire-rated plasterboard for partition and ceiling systems needing improved fire performance.", specs: ["12.5mm"], useCases: ["Fire-rated partitions", "Ceilings", "Escape routes"] },
+      { name: "Knauf Moisture Resistant Gypsum Board", desc: "Water-repellent plasterboard for humid rooms and areas with occasional splashing.", specs: ["12.5mm"], useCases: ["Bathrooms", "Kitchens", "Humid areas"] },
+      { name: "Gyproc Moisture Resistant Gypsum Board", desc: "Moisture-resistant plasterboard for bathrooms, washrooms and similar wet-service areas.", specs: ["12.5mm"], useCases: ["Bathrooms", "Washrooms", "Utility rooms"] },
+    ],
+  },
+  {
+    slug: "industrial-chemicals",
+    group: "Industrial Chemicals",
+    icon: "beaker",
+    blurb:
+      "Bulk and drum-quantity industrial chemicals for water treatment, cleaning, food processing and manufacturing — supplied to trade and industry.",
+    items: [
+      { name: "Sulphuric Acid", desc: "Strong mineral acid used in manufacturing, batteries, effluent treatment and pH correction.", useCases: ["Water treatment", "Manufacturing", "pH correction"] },
+      { name: "Nitric Acid", desc: "Strong oxidising acid used in fertiliser production, metal treatment and industrial cleaning.", specs: ["68% in water"], useCases: ["Metal treatment", "Fertiliser production", "Industrial cleaning"] },
+      { name: "Phosphoric Acid", desc: "Acid used in food processing, fertiliser manufacture, rust treatment and cleaning formulations.", useCases: ["Food processing", "Rust treatment", "Detergents"] },
+      { name: "Caustic Soda (Flakes & Pearls)", desc: "Sodium hydroxide in flake or pearl form, used in soap and detergent manufacture, pulp and paper, and effluent treatment.", specs: ["Flakes or pearls"], useCases: ["Soap & detergents", "Effluent treatment", "Cleaning-in-place"] },
+      { name: "Sodium Hypochlorite", desc: "Chlorine-based liquid disinfectant and bleaching agent for water treatment and sanitation.", useCases: ["Water treatment", "Sanitation", "Bleaching"] },
+      { name: "65% HTH Calcium Hypochlorite", desc: "Dry chlorine granules for pool and water disinfection, with high available chlorine.", specs: ["65% available chlorine"], useCases: ["Pool treatment", "Water disinfection", "Sanitation"] },
+      { name: "Boric Acid", desc: "Mild acid used in glass and ceramics, metallurgy, wood treatment and pest control formulations.", useCases: ["Glass & ceramics", "Metallurgy", "Wood treatment"] },
+      { name: "Hydrated Lime", desc: "Calcium hydroxide for water and effluent treatment, soil stabilisation, mortar and pH correction.", useCases: ["Water treatment", "Soil stabilisation", "Construction"] },
+      { name: "Citric Acid", desc: "Food-grade organic acid used as an acidulant, descaler and chelating agent.", specs: ["25 kg bags"], useCases: ["Food & beverage", "Descaling", "Cleaning products"] },
+      { name: "Acetic Acid", desc: "Organic acid used in food processing, textiles, cleaning products and chemical manufacture.", useCases: ["Food processing", "Textiles", "Cleaning products"] },
+      { name: "Aluminium Sulphate", desc: "Water-soluble coagulant used in drinking-water and wastewater treatment and paper making.", useCases: ["Water purification", "Wastewater treatment", "Paper making"] },
+      { name: "Sodium Tripolyphosphate (STPP)", desc: "Inorganic builder used in detergents, water softening and food processing.", useCases: ["Detergent manufacture", "Water softening", "Food processing"] },
+      { name: "Jacobi Activated Carbon", desc: "Highly porous carbon for filtration and purification of water, air, and process streams.", useCases: ["Water filtration", "Air purification", "Process treatment"] },
+      { name: "Butyl Glycol", desc: "Fast-evaporating glycol ether solvent for coatings, cleaners and industrial formulations.", specs: ["Fully water-soluble"], useCases: ["Coatings", "Industrial cleaners", "Formulation"] },
+    ],
+  },
 ];
 
 // Legacy flat grouping kept for the home Products section + QuoteForm options.
